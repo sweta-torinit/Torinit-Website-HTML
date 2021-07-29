@@ -32,7 +32,7 @@
   font-family: TT Norms Bold;
   src: url(../fonts/TT-Norms-Fonts/TTNorms-Bold.otf);
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100&display=swap');
 
 /*--------------------------------------------------------------
 # General
@@ -64,8 +64,8 @@ h6 {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: calc(100% - 277px);
-    width: calc(100% - 277px);
+    max-width: calc(100% - 144px);
+    width: calc(100% - 144px);
   }
 }
 @media (max-width: 600px) {
@@ -477,7 +477,7 @@ h6 {
   width: 100%;
   overflow: hidden;
   position: relative;
-  background-image: url("../img/slider/slide-1.png");
+  background-image: linear-gradient(#0033A1, #011E41);
   padding: 0;
   background-size: cover;
   background-repeat: no-repeat;
@@ -494,7 +494,7 @@ h6 {
   width: 100%;
   overflow: hidden;
   position: relative;
-  background-image: url("../img/slider/slide-2.svg");
+  background-image: linear-gradient(#0033A1, #011E41);
   padding: 0;
   background-size: cover;
   background-repeat: no-repeat;
@@ -511,7 +511,7 @@ h6 {
   width: 100%;
   overflow: hidden;
   position: relative;
-  background-image: url("../img/slider/slide-3.svg");
+  background-image: linear-gradient(#0033A1, #011E41);
   padding: 0;
   background-size: cover;
   background-repeat: no-repeat;
@@ -880,16 +880,18 @@ section {
 --------------------------------------------------------------*/
 
 .about {
-  padding-top: 92px;
+  padding-top: 48px;
   position: relative;
-  padding-bottom: 62px;
+  padding-bottom: 40px;
 }
 
 .about .content h3 {
   font-weight: 600;
   font-size: 26px;
 }
-
+.about .section-title {
+  padding-bottom: 22px;
+}
 .about .rightimg {
   position: absolute;
   right: 0px;
@@ -897,14 +899,14 @@ section {
 }
 
 .about .content p {
-  line-height: 19px;
-  font-size: 16px;
+  line-height: 40px;
+  font-size: 28px;
+    font-family: TT Norms Regular;
   color: #000;
+  margin-bottom: 0px;
 }
 
-.about p:last-child {
-  margin-bottom: 56px;
-}
+
 
 .about .content .btn-learn-more {
   font-weight: 700;
@@ -986,7 +988,7 @@ section {
 .services {
   position: relative;
   background: #F5F5F5;
-  padding: 66px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
 }
 
 .services .bluebox {
@@ -1007,18 +1009,8 @@ section {
   min-height: 439px;
    color: var( --bs-white)
 }
-.services .bluebox:nth-child(2)  .content {
- background: var(--bs-white);
- color: #000;
-}
-.services .bluebox:nth-child(3)  .content {
- background: var(--bs-white);
- color: #000;
-}
-.services .bluebox:last-child  .content {
- background: var(--bs-white);
- color: #000;
-}
+
+
 .services .bluebox .content h3 {
   font-size: 48px;
   font-weight: 400;
@@ -1037,6 +1029,14 @@ section {
 }
 .services .bluebox .btn-learn-more img{
   height: 28px;
+}
+.services .bluebox .imagecontent{
+height: 439px;
+}
+.services .bluebox .imagecontent img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
 }
 @media(max-width:1366px) {
   .services .bluebox .content h3 {
@@ -1138,8 +1138,64 @@ section {
 .services .bluebox .btn-learn-more{
   bottom: 87px;
 }
+.services .bluebox .imagecontent{
+  min-height: 584px;
+}
 }
 
+/*--------------------------------------------------------------
+# Who we are
+--------------------------------------------------------------*/
+
+.whoweare {
+  padding-top: 45px;
+  position: relative;
+  padding-bottom: 51px;
+}
+
+.whoweare .content h3 {
+  font-weight: 600;
+  font-size: 26px;
+}
+.whoweare .section-title {
+  padding-bottom: 22px;
+}
+.whoweare .rightimg {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+.whoweare .content p {
+  line-height: 40px;
+  font-size: 28px;
+    font-family: TT Norms Regular;
+  color: #000;
+  margin-bottom: 35px;
+}
+
+
+
+.whoweare .content .btn-learn-more {
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 21px 39px;
+  border-radius: 0px;
+  transition: 0.5s;
+  line-height: 1;
+  line-height: 21px;
+  color: #000;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  border: 1px solid #011E41;
+}
+
+.whoweare .content .btn-learn-more:hover {
+  color: unset !important;
+  text-decoration: none;
+}
 /*--------------------------------------------------------------
 # Case Study
 --------------------------------------------------------------*/
@@ -1149,13 +1205,13 @@ section {
   background-image: url(../img/layer.png);
   background-repeat: no-repeat;
   padding-top: 56px;
-  background-size: 36%;
+  background-size: 33%;
   padding-bottom: 148px;
   position: relative;
   background-position: bottom left;
 }
 
-.casestudy .section-title {
+/* .casestudy .section-title {
   padding-bottom: 55px;
 }
 
@@ -1163,7 +1219,7 @@ section {
   font-size: 48px;
   color: #000;
   font-family: TT Norms Bold;
-}
+} */
 
 .casestudy .content p {
   line-height: 18.89px;
@@ -1333,8 +1389,8 @@ margin-left: 0px;
 --------------------------------------------------------------*/
 
 .goal {
-  padding-top: 82px;
-  padding-bottom: 105px;
+  padding-top: 48px;
+  padding-bottom: 85px;
 }
 
 .goal .columnbox3 {
@@ -1359,7 +1415,8 @@ margin-left: 0px;
   margin-bottom: 37px;
   font-size: 35px;
   line-height: 50px;
-  max-width: calc(100% - 7px);
+  max-width: calc(100% - 5px);
+  color: #000;
 }
 .goal .hoverbox .content-title a img {
 height: 28px;
