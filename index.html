@@ -13,6 +13,7 @@
 	<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 	<link href="assets/css/style.css" rel="stylesheet">
+	<link href="assets/css/responsive.css" rel="stylesheet">
 </head>
 
 <body>
@@ -20,18 +21,33 @@
 	<header id="header" class="d-block align-items-center  header-transparent ">
 		<div class="container-fluid d-flex align-items-center justify-content-between">
 			<div class="logo d-none d-sm-block">
-				<h1><a href="index.html"><img src="assets/img/logo.svg"></a></h1>
+				<h1><a href="index"><img src="assets/img/logo.svg"></a></h1>
 			</div>
 			<div class="logo d-block d-sm-none">
-				<h1><a href="index.html"><img src="assets/img/mobile-logo.svg"></a></h1>
+				<h1><a href="index"><img src="assets/img/mobile-logo.svg"></a></h1>
 			</div>
 			<nav id="navbar" class="navbar">
 				<ul>
-					<li><a class="nav-link" href="about.html">ABOUT</a></li>
-					<li><a class="nav-link" href="#">Solutions</a></li>
+					<li><a class="nav-link" href="about">ABOUT</a></li>
+					<li class="dropdown"><a class="nav-link" href="#"><span>Solutions</span><i class="bi bi-chevron-down"></i></a>
+						<ul>
+							<li><a href="goals/accelerate-revenues.html">Optimize Operations</a></li>
+							<li><a href="goals/accelerate-revenues.html">Accelerate
+									Revenues</a></li>
+							<li><a href="goals/accelerate-revenues.html">Harness the power of data and analytics</a>
+							</li>
+							<li><a href="goals/accelerate-revenues.html">Modernize core
+									technologies</a></li>
+							<li><a href="goals/accelerate-revenues.html">Create
+									stunning digital
+									experiences</a></li>
+							<li><a href="goals/accelerate-revenues.html">Empower
+									customer success</a></li>
+						</ul>
+					</li>
 					<li><a class="nav-link" href="#">Services</a></li>
-					<li><a class="nav-link" href="#">CAREERS</a></li>
-					<li><a class="nav-link contactus" href="#">Contact</a></li>
+					<li><a class="nav-link" href="career">CAREERS</a></li>
+					<li><a class="nav-link contactus" href="contact">Contact</a></li>
 				</ul>
 				<i class="bi bi-list mobile-nav-toggle"></i>
 			</nav>
@@ -55,7 +71,7 @@
 	</section>
 	<main id="main">
 		<!-- ======= About Section ======= -->
-		<section id="about" class="about d-none d-sm-block">
+		<section id="about" class="about ">
 			<div class="container">
 				<div class="row content">
 					<div class="col-xl-12">
@@ -77,23 +93,29 @@
 		</section>
 		<!-- End About Section -->
 		<!-- ======= services Section ======= -->
-		<section id="services" class="services d-none d-sm-block">
+		<section id="services" class="services ">
 			<div class="container-fluid p-0">
 				<div class="row">
 					<!--service-1-->
 					<div class="bluebox">
+						<div class="bluebox d-block d-sm-none">
+							<div class="imagecontent">
+								<img src="assets/img/services/digital--tranformation.png">
+							</div>
+						</div>
 						<div class="content">
 							<h3>Digital Transformation</h3>
 							<p>Risus nullam eget felis eget nunc lobortis. Sagittis orci a scelerisque.</p>
-							<a href="services/digital-transformation.html" class="btn-learn-more">
-								<img src="assets/img/icon/rightarrow.svg"> </a>
+							<a href="services/digital-transformation" class="btn-learn-more stretched-link">
+								<i class="bi bi-arrow-right"></i> </a>
 						</div>
 					</div>
-					<div class="bluebox">
+					<div class="bluebox d-none d-sm-block">
 						<div class="imagecontent">
 							<img src="assets/img/services/digital--tranformation.png">
 						</div>
 					</div>
+
 					<!--end-->
 					<!--service-2-->
 					<div class="bluebox">
@@ -105,21 +127,26 @@
 						<div class="content">
 							<h3>Product Development</h3>
 							<p>Risus nullam eget felis eget nunc lobortis. Sagittis orci a scelerisque.</p>
-							<a href="#" class="btn-learn-more">
-								<img src="assets/img/icon/rightarrow.svg"> </a>
+							<a href="services/digital-transformation" class="btn-learn-more stretched-link">
+								<i class="bi bi-arrow-right"></i> </a>
 						</div>
 					</div>
 					<!--end-->
 					<!--service-3-->
 					<div class="bluebox">
+						<div class="bluebox d-block d-sm-none">
+							<div class="imagecontent">
+								<img src="assets/img/services/experience-design.png">
+							</div>
+						</div>
 						<div class="content">
 							<h3>Experience Design</h3>
 							<p>Risus nullam eget felis eget nunc lobortis. Sagittis orci a scelerisque.</p>
-							<a href="#" class="btn-learn-more">
-								<img src="assets/img/icon/rightarrow.svg"> </a>
+							<a href="services/digital-transformation" class="btn-learn-more stretched-link">
+								<i class="bi bi-arrow-right"></i> </a>
 						</div>
 					</div>
-					<div class="bluebox">
+					<div class="bluebox d-none d-sm-block">
 						<div class="imagecontent">
 							<img src="assets/img/services/experience-design.png">
 						</div>
@@ -135,24 +162,30 @@
 						<div class="content">
 							<h3>Engineering Pods</h3>
 							<p>Risus nullam eget felis eget nunc lobortis. Sagittis orci a scelerisque.</p>
-							<a href="#" class="btn-learn-more">
-								<img src="assets/img/icon/rightarrow.svg"> </a>
+							<a href="services/digital-transformation" class="btn-learn-more stretched-link">
+								<i class="bi bi-arrow-right"></i> </a>
 						</div>
 					</div>
 					<!--end-->
 					<div class="bluebox">
+						<div class="bluebox d-block d-sm-none">
+							<div class="imagecontent">
+								<img src="assets/img/services/ux-audit.png">
+							</div>
+						</div>
 						<div class="content">
 							<h3>UX Audits</h3>
 							<p>Risus nullam eget felis eget nunc lobortis. Sagittis orci a scelerisque.</p>
-							<a href="#" class="btn-learn-more">
-								<img src="assets/img/icon/rightarrow.svg"> </a>
+							<a href="services/digital-transformation" class="btn-learn-more stretched-link">
+								<i class="bi bi-arrow-right"></i> </a>
 						</div>
 					</div>
-					<div class="bluebox">
+					<div class="bluebox d-none d-sm-block">
 						<div class="imagecontent">
 							<img src="assets/img/services/ux-audit.png">
 						</div>
 					</div>
+					<!--end-->
 					<div class="bluebox">
 						<div class="imagecontent">
 							<img src="assets/img/services/technical-audit.png">
@@ -162,8 +195,8 @@
 						<div class="content">
 							<h3>Technical Audits</h3>
 							<p>Risus nullam eget felis eget nunc lobortis. Sagittis orci a scelerisque.</p>
-							<a href="#" class="btn-learn-more">
-								<img src="assets/img/icon/rightarrow.svg"> </a>
+							<a href="services/digital-transformation" class="btn-learn-more stretched-link">
+								<i class="bi bi-arrow-right"></i> </a>
 						</div>
 					</div>
 				</div>
@@ -186,7 +219,7 @@
 							varius. Lorem
 							ipsum dolor sit amet,
 						</p>
-						<a href="#" class="btn-learn-more">LEARN MORE</a>
+						<a href="about" class="btn-learn-more">LEARN MORE</a>
 					</div>
 				</div>
 			</div>
@@ -204,8 +237,9 @@
 							<div class="content-overlay"></div>
 							<div class="content-title">
 								<h3>Optimize<br> Operations</h3>
-								<a href="#" class="stretched-link">
-									<img src="assets/img/icon/left-arrow-blue.svg"> </a>
+								<a href="goals/accelerate-revenues" class="stretched-link">
+									<img src="assets/img/icon/left-arrow-blue.svg">
+								</a>
 							</div>
 							<div class="content-details fadeIn-bottom">
 								<h3 class="content-title">Optimize Operations
@@ -223,7 +257,7 @@
 								<h3>Accelerate<br>
 									Revenues
 								</h3>
-								<a href="goals/accelerate-revenues.html" class="stretched-link">
+								<a href="goals/accelerate-revenues" class="stretched-link">
 									<img src="assets/img/icon/left-arrow-blue.svg">
 								</a>
 							</div>
@@ -246,8 +280,9 @@
 							<div class="content-overlay"></div>
 							<div class="content-title">
 								<h3>Harness the power of data and analytics</h3>
-								<a href="#" class="stretched-link">
-									<img src="assets/img/icon/left-arrow-blue.svg"> </a>
+								<a href="goals/accelerate-revenues" class="stretched-link">
+									<img src="assets/img/icon/left-arrow-blue.svg">
+								</a>
 							</div>
 							<div class="content-details fadeIn-bottom">
 								<h3 class="content-title">Harness the power of data and analytics
@@ -265,8 +300,9 @@
 								<h3>Modernize core
 									technologies
 								</h3>
-								<a href="#" class="stretched-link">
-									<img src="assets/img/icon/left-arrow-blue.svg"> </a>
+								<a href="goals/accelerate-revenues" class="stretched-link">
+									<img src="assets/img/icon/left-arrow-blue.svg">
+								</a>
 							</div>
 							<div class="content-details fadeIn-bottom">
 								<h3 class="content-title">Modernize core
@@ -286,8 +322,9 @@
 									stunning digital
 									experiences
 								</h3>
-								<a href="#" class="stretched-link">
-									<img src="assets/img/icon/left-arrow-blue.svg"> </a>
+								<a href="goals/accelerate-revenues" class="stretched-link">
+									<img src="assets/img/icon/left-arrow-blue.svg">
+								</a>
 							</div>
 							<div class="content-details fadeIn-bottom">
 								<h3 class="content-title">Create
@@ -307,8 +344,9 @@
 								<h3>Empower<br>
 									customer <br>success
 								</h3>
-								<a href="#" class="stretched-link">
-									<img src="assets/img/icon/left-arrow-blue.svg"> </a>
+								<a href="goals/accelerate-revenues" class="stretched-link">
+									<img src="assets/img/icon/left-arrow-blue.svg">
+								</a>
 							</div>
 							<div class="content-details fadeIn-bottom">
 								<h3 class="content-title">Empower
@@ -331,57 +369,67 @@
 					<h2>Our Impact</h2>
 				</div>
 				<div class="row content">
-					<div class="col-lg-7">
-						<div id="casstudyCarousel" class="carousel slide " data-bs-ride="carousel"
-							data-bs-interval="5000" style="overflow:hidden">
-							<div class="carousel-item  active">
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-									incididunt ut labore
-									et dolore magna
-									aliqua. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras. Dolor morbi
-									non arcu risus quis
-									varius.
-								</p>
-								<a href="#" class="btn-learn-more">
-									Learn More
-								</a>
+					<div id="casstudyCarousel" class="carousel slide " data-bs-ride="carousel" data-bs-interval="5000">
+						<div class="col-lg-7">
+							<div class="row">
+								<div class="col-12" style="overflow: hidden;">
+									<div class="carousel-item  active">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+											tempor
+											incididunt ut labore
+											et dolore magna
+											aliqua. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras. Dolor
+											morbi
+											non arcu risus quis
+											varius.
+										</p>
+										<a href="#" class="btn-learn-more">
+											Learn More
+										</a>
+									</div>
+									<div class="carousel-item">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+											tempor
+											incididunt ut labore
+											et dolore magna
+											aliqua. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras. Dolor
+											morbi
+											non arcu risus quis
+											varius.
+										</p>
+										<a href="#" class="btn-learn-more">
+											Learn More
+										</a>
+									</div>
+									<div class="carousel-item ">
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+											tempor
+											incididunt ut labore
+											et dolore magna
+											aliqua. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras. Dolor
+											morbi
+											non arcu risus quis
+											varius.
+										</p>
+										<a href="#" class="btn-learn-more">
+											Learn More
+										</a>
+									</div>
+								</div>
 							</div>
-							<div class="carousel-item">
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-									incididunt ut labore
-									et dolore magna
-									aliqua. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras. Dolor morbi
-									non arcu risus quis
-									varius.
-								</p>
-								<a href="#" class="btn-learn-more">
-									Learn More
-								</a>
-							</div>
-							<div class="carousel-item ">
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-									incididunt ut labore
-									et dolore magna
-									aliqua. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras. Dolor morbi
-									non arcu risus quis
-									varius.
-								</p>
-								<a href="#" class="btn-learn-more">
-									Learn More
-								</a>
+							<div class="carousel-indicators">
+								<button type="button" data-bs-target="#casstudyCarousel" data-bs-slide-to="0" class="active"></button>
+								<button type="button" data-bs-target="#casstudyCarousel" data-bs-slide-to="1"></button>
+								<button type="button" data-bs-target="#casstudyCarousel" data-bs-slide-to="2"></button>
 							</div>
 						</div>
-						<div class="carousel-indicators">
-							<button type="button" data-bs-target="#casstudyCarousel" data-bs-slide-to="0"></button>
-							<button type="button" data-bs-target="#casstudyCarousel" data-bs-slide-to="1"></button>
-							<button type="button" data-bs-target="#casstudyCarousel" data-bs-slide-to="2"></button>
-						</div>
+
 					</div>
 					<div class="col-lg-5">
-						<img src="assets/img/casestudy.svg" class="img-fluid casestudyimg">
+						<img src="assets/img/our-impact.png" class="img-fluid casestudyimg">
 					</div>
 				</div>
 			</div>
@@ -390,29 +438,31 @@
 	</main>
 	<!-- End #main -->
 	<!-- ======= Footer ======= -->
-	<footer id="footer" class="d-none d-sm-block">
+	<footer id="footer">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-md-12 col-lg-6">
 					<img src="assets/img/logo.svg" class="footer-logo">
 					<p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+					<div class="copyright d-none d-sm-block">
+						<p>Copyright ©2021. <a href="https://torinit.com/">Torinit Technologies Inc.</a></p>
+					</div>
 				</div>
 				<div class="col-md-12 col-lg-6">
 					<div class="rightsidecontent">
 						<div class="footermenu">
 							<ul>
-								<li><a href="#">About</a></li>
-								<li><a href="#">Service</a></li>
-								<li><a href="#">Offerings</a></li>
-								<li><a href="#">Case Studies</a></li>
-								<li><a href="#">Insights</a></li>
-								<li><a href="#">Contact</a></li>
+								<li><a href="about">About</a></li>
+								<li><a href="#">Solutions</a></li>
+								<li><a href="#">Services</a></li>
+								<li><a href="career">Careers</a></li>
+								<li><a href="contact">Contact</a></li>
 							</ul>
 						</div>
 						<div class="socialmedia">
 							<img src="assets/img/icon/linkedin.svg"> Find us on LinkedIn
 						</div>
-						<div class="copyright">
+						<div class="copyright d-block d-sm-none">
 							<p>Copyright ©2021. <a href="https://torinit.com/">Torinit Technologies Inc.</a></p>
 						</div>
 					</div>

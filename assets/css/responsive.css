@@ -1,0 +1,399 @@
+ @media(min-width:1800px) and (max-width:2449px){
+  #header{
+         padding: 31px 77px 0px 77px;
+    }
+     #header .container-fluid{
+         padding-bottom: 21px;
+    }
+     #header .logo img{
+         min-height: 64px;
+         max-height: 64px;
+    }
+    .navbar a{
+         padding: 5px 35px 7px 35px;
+         font-size: 21px;
+         line-height: 14px;
+		}
+		.navbar .contactus{
+			padding: 6px 6px;
+        }
+         .navbar .dropdown ul a {
+    padding: 12px 20px;
+    font-size: 20px;
+}
+        .navbar a i, .navbar a:focus i {
+    font-size: 16px;
+    line-height: 0;
+    margin-left: 5px;
+        }
+        /*hero*/
+        #hero .container {
+    max-width: calc(100% - 412px);
+    width: calc(100% - 412px);
+}
+.container {
+    max-width: calc(100% - 209px);
+    width: calc(100% - 209px);
+}
+.container.container-xs {
+    max-width: calc(100% - 317px);
+    width: calc(100% - 217px);
+}
+          #hero h1{
+         font-size: 111px;
+         line-height: 111px;
+         margin-bottom: 30px;
+    }
+     #hero p{
+         font-size: 31px;
+         line-height: 37px;
+    }
+     #hero p {
+         width: 54%;
+    }
+     #hero .carousel-indicators [data-bs-target]{
+         width: 99px;
+         height: 6px;
+         margin-right: 7px;
+         margin-left: 7px;
+    }
+     #hero .btn-get-started {
+         font-weight: 700;
+         font-size: 23px;
+         padding: 30px 53px;
+    }
+     #hero .carousel-indicators{
+         bottom: 64px;
+    }
+    /*section*/
+      .section-title {
+         padding-bottom: 64px;
+    }
+     .section-title h2 {
+         font-size: 63px;
+         line-height: 79px;
+    }
+     .section-title p{
+         font-size: 31px;
+         line-height: 37px;
+    }
+    /*about*/
+   
+     .about .content .btn-learn-more{
+         font-weight: 700;
+         font-size: 23px;
+         padding: 30px 53px;
+    }
+    .whoweare .content .btn-learn-more  {
+    font-weight: 700;
+    font-size: 23px;
+    padding: 30px 53px;
+}
+    /*services*/
+      .services .section-title h2{
+         margin-bottom: 16px;
+    }
+     .bluebox .content{
+         padding: 97px 128px 87px 128px;
+         min-height: 584px;
+    }
+     .bluebox .content h3{
+         font-size: 63px;
+         line-height: 79px;
+         height: 152px;
+         margin-bottom: 30px;
+    }
+     .bluebox .content p{
+         font-size: 31px;
+         line-height: 37px;
+    }
+     .bluebox .btn-learn-more img {
+         height: 38px;
+    }
+     .bluebox .btn-learn-more{
+         bottom: 87px;
+    }
+     .bluebox .imagecontent{
+         min-height: 584px;
+    }
+    /*casestudy*/
+    .casestudy{
+         background-size: 35%;
+         padding-bottom: 197px;
+         padding-top: 75px;
+    }
+     .casestudy .section-title h2 {
+         font-size: 63px;
+         line-height: 75px;
+    }
+     .casestudy .content p {
+         line-height: 25px;
+         font-size: 21px;
+         padding-right: 42px;
+    }
+     .casestudy .video-title {
+         font-family: MavenPro Regular;
+         margin-bottom: 0px !important;
+         font-size: 18px !important;
+         line-height: 22px !important;
+         margin-top: 7px !important;
+         margin-left: 13px;
+         color: #000;
+    }
+     /* .casestudy .section-title {
+         padding-bottom: 73px;
+    } */
+     .casestudy .content .btn-learn-more{
+         font-weight: 700;
+         font-size: 23px;
+         padding: 30px 53px;
+    }
+     .casestudy .carousel-indicators{
+         bottom: 84px;
+    }
+     .casestudy .carousel-indicators [data-bs-target]{
+         width: 140px;
+         height: 9px;
+         margin-left: 11px;
+         margin-right: 11px;
+    }
+    /*goal*/
+     .goal .hoverbox{
+         padding: 55px 64px 55px 64px;
+         min-height: 486px 
+    }
+     .goal .hoverbox .content-title h3 {
+         font-size: 47px;
+         line-height: 66px;
+    }
+     .goal .hoverbox .content-title a img{
+         height: 38px;
+    }
+     .goal .content-details h3{
+         font-size: 47px;
+         line-height: 47px;
+    }
+     .goal .content-details{
+         padding: 42px 27px 42px 56px;
+    }
+     .goal .content-details p{
+       font-size: 25px;
+    line-height: 34px;
+    }
+   #banner p {
+    width: 52%;
+   }
+    /*footer*/
+    #footer{
+       padding: 68px 85px; 
+    }
+      #footer .footer-logo{
+         height: 64px;
+         margin-bottom: 23px;
+    }
+     #footer .text {
+         font-size: 21px;
+         line-height: 25px;
+    }
+     #footer .footermenu ul li {
+         font-size: 21px;
+         line-height: 25px;
+         padding: 0px 18px;
+    }
+     #footer .socialmedia img{
+         margin-right: 15px;
+         width: 35px;
+    }
+     #footer .socialmedia{
+         font-size: 21px;
+         line-height: 25px;
+         margin-bottom: 35px;
+    }
+     #footer .copyright{
+         font-size: 21px;
+         line-height: 25px;
+    }
+     #footer .footermenu ul{
+         margin-bottom: 22px;
+    }
+    #footer .copyright p{
+        font-size: 21px;
+    line-height: 25px;
+    }
+ }
+
+ @media(min-width:2450px){
+      #header{
+         padding: 31px 120px 0px 120px;
+    }
+     #header .container-fluid{
+         padding-bottom: 21px;
+    }
+     #header .logo img{
+         min-height: 85px;
+         max-height: 85px;
+    }
+    .navbar a{
+        padding: 5px 42px 7px 42px;
+   font-size: 28px;
+    line-height: 24px;
+        }
+        .navbar .dropdown ul a {
+    padding: 12px 20px;
+    font-size: 20px;
+}
+		.navbar .contactus{
+			padding: 6px 6px;
+        }
+         .navbar a i, .navbar a:focus i {
+       font-size: 25px;
+    line-height: 0;
+    margin-left: 5px;
+
+        }
+        #hero .carousel-container{
+              padding-bottom: 130px;  
+        }
+        #hero .container {
+    max-width: calc(100% - 593px);
+    width: calc(100% - 593px);
+}
+     #hero h1 {
+    font-size: 149px;
+    line-height: 149px;
+    margin-bottom: 60px;
+}
+     #hero p {
+    font-size: 48px;
+    line-height: 60px;
+    width: 54%;
+}
+
+
+.container {
+    max-width: calc(100% - 336px);
+    width: calc(100% - 336px);
+}
+.container.container-xs {
+    max-width: calc(100% - 449px);
+    width: calc(100% - 449px);
+}
+.section-title h2 {
+    font-size: 85px !important;
+    line-height: 85px !important;
+}
+section{
+    padding: 85px 0px !important;
+}
+.about .content p {
+   line-height: 55px;
+    font-size: 42px;
+        margin-bottom: 64px;
+}
+.services{
+  padding: 0px !important;
+}
+.bluebox .content{
+        padding: 140px 182px;
+}
+.bluebox .content h3 {
+    font-size: 83px;
+    line-height: 86px;
+    margin-bottom: 72px;
+}
+.bluebox .content p {
+    font-size: 42px;
+    line-height: 50px;
+}
+.bluebox .content{
+        min-height: 750px;
+}
+.bluebox .imagecontent{
+    min-height: 750px;
+}
+.bluebox .btn-learn-more i {
+    font-size: 86px;
+}
+.whoweare .content .btn-learn-more  {
+    font-weight: 700;
+    font-size: 23px;
+    padding: 30px 53px;
+}
+.whoweare .content p {
+    line-height: 55px;
+    font-size: 42px;
+        margin-bottom: 64px;
+}
+.goal .hoverbox .content-title a img{
+    height: 50px;
+}
+ .goal .content-details p{
+       font-size: 25px;
+    line-height: 34px;
+    }
+.goal .hoverbox {
+    background: rgba(197, 217, 231, 0.5);
+    padding: 119px 74px;
+    min-height: 648px;
+}
+.goal .hoverbox .content-title h3{
+  font-size: 62px;
+    line-height: 84px;
+    max-width: calc(100% - 70px);
+}
+.casestudy .content p {
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 60px;
+}
+.casestudy{
+    padding-top: 100px !important;
+    padding-bottom: 196px !important;
+}
+.casestudy .section-title {
+        padding-bottom: 32px;
+}
+ 
+      .casestudy .content .btn-learn-more{
+         font-weight: 700;
+         font-size: 23px;
+         padding: 30px 53px;
+    }
+    /*footer*/
+    #footer {
+    padding: 68px 154px;
+}
+      #footer .footer-logo{
+         height: 64px;
+         margin-bottom: 23px;
+    }
+     #footer .text {
+         font-size: 21px;
+         line-height: 25px;
+    }
+     #footer .footermenu ul li {
+         font-size: 21px;
+         line-height: 25px;
+         padding: 0px 28px;
+    }
+     #footer .socialmedia img{
+         margin-right: 15px;
+         width: 35px;
+    }
+     #footer .socialmedia{
+         font-size: 21px;
+         line-height: 25px;
+         margin-bottom: 35px;
+    }
+     #footer .copyright{
+         font-size: 21px;
+         line-height: 25px;
+    }
+     #footer .footermenu ul{
+         margin-bottom: 22px;
+    }
+    #footer .copyright p{
+        font-size: 21px;
+    line-height: 25px;
+    }
+ }
