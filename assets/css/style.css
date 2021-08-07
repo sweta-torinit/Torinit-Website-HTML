@@ -378,23 +378,26 @@
  #hero .slide-1{
      width: 100%;
      background: linear-gradient(350deg,#011E41 100%, #0033A1 0%, rgba(0, 0, 0, 0.8) 0%);
-     background-image: url(../img/home/banner-img.png);
+     background-image: url(../img/home/slide-1.png);
      background-size: cover;
      background-repeat: no-repeat;
+     background-position: center;
 }
  #hero .slide-2{
      width: 100%;
      background: linear-gradient(350deg,#011E41 100%, #0033A1 0%, rgba(0, 0, 0, 0.8) 0%);
-     background-image: url(../img/home/banner-img.png);
+     background-image: url(../img/home/slide-2.png);
      background-size: cover;
      background-repeat: no-repeat;
+     background-position: center;
 }
  #hero .slide-3{
      width: 100%;
      background: linear-gradient(350deg,#011E41 100%, #0033A1 0%, rgba(0, 0, 0, 0.8) 0%);
-     background-image: url(../img/home/banner-img.png);
+     background-image: url(../img/home/slide-3.png);
      background-size: cover;
      background-repeat: no-repeat;
+     background-position: center;
 }
  .slide-1 .imageoverlay{
      background: rgba(0, 0, 0, 0.5);
@@ -411,7 +414,7 @@
      text-align: left;
      position: relative;
      min-height: 100vh;
-     padding-bottom: 126px;
+     padding-bottom: 70px;
 }
  @media(min-width:1280px){
      #hero .container {
@@ -422,7 +425,7 @@
  #hero .carousel-indicators {
      position: absolute;
      right: unset;
-     bottom: 46px;
+     bottom: 30px;
      left: unset;
      z-index: 2;
      display: flex;
@@ -466,12 +469,12 @@
 }
  #hero h1 {
          color: #fff;
-    font-size: 67px;
+    font-size: 64px;
     font-weight: 400;
     font-family: castoro;
-    line-height: 71px;
-    margin-bottom: 26px;
-    width: 67%;
+    line-height: 64px;
+    margin-bottom: 20px;
+    /* width: 67%; */
 }
  #hero .subtext {
      margin-bottom: 32px;
@@ -483,7 +486,7 @@
      margin-left: 12px;
 }
  #hero p {
-  width: 59%;
+  /* width: 59%; */
     color: #fff;
     font-family: MavenPro Regular;
     font-size: 26px;
@@ -491,11 +494,11 @@
 }
  @media(max-width:767px){
      #hero .carousel-container{
-         min-height: 28rem;
-         padding-bottom: 90px;
+         min-height: 25rem;
+         padding-bottom: 40px;
     }
      #hero .carousel-indicators{
-         bottom: 40px;
+         bottom: 15px;
     }
      #hero .carousel-indicators [data-bs-target]{
          width: 40px;
@@ -510,15 +513,15 @@
          font-size: 12px;
     }
      #hero h1{
-         font-size: 26px;
-    line-height: 33px;
-    margin-bottom: 20px;
+            font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 10px;
     width: 100%;
     }
      #hero p{
-         font-size: 16px;
-         line-height: 20px;
-         width: 100%;
+        font-size: 13px;
+    line-height: 15px;
+    width: 100%;
     }
 }
  @media(min-width:1367px) and (max-width:1439px){
@@ -1173,7 +1176,11 @@
 }
  #footer .socialmedia {
      clear: both;
+     color: #fff;
 }
+ #footer .socialmedia  a{
+     color: #fff;
+ }
  #footer .socialmedia {
      font-family: MavenPro Regular;
      color: rgba(255, 255, 255, 1);
@@ -1257,6 +1264,7 @@
      background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, #0033A1 0%, #011E41 0%);
      background-size: cover !important;
      background-repeat: no-repeat !important;
+         background-position: center !important;
 }
  #banner .banner-container {
      display: flex;
@@ -1268,7 +1276,14 @@
      position: relative;
      min-height: 83vh;
 }
- @media(min-width:1200px){
+ @media(min-width:1200px) and (max-width:1399px){
+     #banner .banner-container {
+         max-width: calc(100% - 233px);
+         width: calc(100% - 233px);
+         padding-top: 80px;
+    }
+}
+ @media(min-width:1400px){
      #banner .banner-container {
          max-width: calc(100% - 278px);
          width: calc(100% - 278px);
@@ -1276,12 +1291,13 @@
     }
 }
  #banner h1 {
-     color: #fff;
-     font-size: 84px;
-     font-weight: 400;
-     font-family: castoro;
-     line-height: 84px;
-     margin-bottom: 32px 
+    color: #fff;
+    font-size: 64px;
+    font-weight: 400;
+    font-family: castoro;
+    line-height: 64px;
+    margin-bottom: 20px;
+        width: 93%;
 }
  #banner .subtext {
      margin-bottom: 32px;
@@ -1290,12 +1306,11 @@
 }
  #banner p {
      width: 68%;
-     font-size: 32px;
-     font-family: MavenPro Regular;
-     opacity: 1;
-     color: #fff;
-     line-height: 37px;
-     margin-bottom: 0px;
+    color: #fff;
+    font-family: MavenPro Regular;
+    font-size: 26px;
+    line-height: 33px;
+    margin-bottom: 0px;
 }
  #banner .btn-get-started {
      font-weight: 700;
@@ -1464,11 +1479,12 @@
      padding-bottom: 40px;
 }
  .worldaround .contentbox{
-     background: rgba(46, 87, 175, 1);
-     padding: 75px 32px;
-     min-height: 288px;
-     color: #fff;
-     margin-bottom: 24px;
+      background: rgba(46, 87, 175, 1);
+    padding: 75px 32px;
+    min-height: 329px;
+    color: #fff;
+    padding-bottom: 20px;
+    margin-bottom: 24px;
 }
  .worldaround .section-title{
      padding-bottom: 32px;

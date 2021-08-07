@@ -10,7 +10,6 @@
      #hero p{
          font-size: 17px;
          line-height: 21px;
-         width: 67%;
     }
      #hero .subtext {
          margin-bottom: 15px;
@@ -19,6 +18,9 @@
     }
      #hero .subtext span {
          font-size: 15px;
+    }
+    #banner{
+        background-position: center  !important;
     }
      .about .section-title {
          padding-bottom: 20px;
@@ -176,7 +178,8 @@
          margin-bottom: 20px;
     }
      #hero p {
-         width: 57%;
+        
+        
          font-size: 21px;
          line-height: 26px;
          margin-bottom: 0px;
@@ -184,8 +187,8 @@
      #hero .subtext span{
          font-size: 18px;
     }
-     #hero .carousel-container{
-         padding-bottom: 97px;
+   #banner{
+        background-position: center  !important;
     }
      .about .section-title {
          padding-bottom: 20px;
@@ -369,7 +372,7 @@
          margin-bottom: 20px;
     }
      #hero p {
-         width: 57%;
+        
          font-size: 21px;
          line-height: 28px;
          margin-bottom: 0px;
@@ -377,9 +380,7 @@
      #hero .subtext span{
          font-size: 18px;
     }
-     #hero .carousel-container{
-         padding-bottom: 97px;
-    }
+   
      .bluebox .content p {
          font-size: 20px;
          line-height: 24px;
@@ -408,8 +409,8 @@
          margin-bottom: 52px;
     }
      #banner h1{
-         font-size: 55px;
-         line-height: 55px;
+         font-size: 50px;
+         line-height: 50px;
          margin-bottom: 20px;
     }
      #banner .subtext {
@@ -480,12 +481,8 @@
          max-width: calc(100% - 317px);
          width: calc(100% - 217px);
     }
-     #hero p {
-         width: 54%;
-    }
-     #hero .carousel-indicators{
-         bottom: 55px;
-    }
+    
+   
     /*casestudy*/
      .casestudy{
          background-size: 35%;
@@ -567,9 +564,7 @@
          line-height: 0;
          margin-left: 5px;
     }
-     #hero .carousel-container{
-         padding-bottom: 130px;
-    }
+   
      #hero .container {
          max-width: calc(100% - 593px);
          width: calc(100% - 593px);
@@ -578,16 +573,14 @@
     font-size: 77px;
     line-height: 77px;
     margin-bottom: 26px;
-    width: 69%;
+    /* width: 69%; */
 }
      #hero p {
           font-size: 32px;
     line-height: 38px;
-        width: 65%;
+        
     }
-     #hero .carousel-indicators{
-         bottom: 55px;
-    }
+    
      .container {
          max-width: calc(100% - 444px);
          width: calc(100% - 444px);
