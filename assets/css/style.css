@@ -365,9 +365,7 @@
  .navbar-mobile .dropdown ul a i {
      font-size: 12px;
 }
- .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover>a {
-     color: #fff;
-}
+
  .navbar-mobile .dropdown>.dropdown-active {
      display: block;
 }
@@ -399,6 +397,7 @@
      background-repeat: no-repeat;
      background-position: center;
 }
+
  .slide-1 .imageoverlay{
      background: rgba(0, 0, 0, 0.5);
      position: absolute;
@@ -675,9 +674,16 @@
      min-height: 416px;
      color: var( --bs-white) ;
 }
+.companyintro .bluebox .content{
+    min-height: 100%;
+}
  .bluebox .content:hover{
      background: rgba(197, 217, 231, 0.5);
      color: var(--bs-darkblue);
+}
+.companyintro .bluebox .content:hover{
+     background: var(--bs-darkblue);
+     color: #fff;
 }
  .bluebox .btn-learn-more:hover{
      color: var(--bs-darkblue) !important;
@@ -714,7 +720,7 @@
  .bluebox .btn-learn-more img{
      height: 28px;
 }
- .bluebox .imagecontent{
+.services .bluebox .imagecontent{
      height: 100%;
 }
  .bluebox .imagecontent img{
@@ -729,6 +735,10 @@
      .bluebox .content{
          padding: 32px 32px;
          min-height: 250px;
+    }
+
+       .companyintro .bluebox .content{
+          min-height: 100%;  
     }
      .bluebox .imagecontent {
          height: auto;
@@ -1259,12 +1269,24 @@
     }
 }
 /*-------- # Sub page banner ----------*/
+#banner .banner-container.accerate{
+           justify-content: flex-end;
+            padding-bottom: 92px;
+}
+#banner .banner-container.enterprise{
+           justify-content: flex-end;
+            padding-bottom: 56px;
+}
+.banner-container.about {
+    justify-content: flex-start !important;
+    padding-top: 209px !important;
+}
  #banner {
      width: 100%;
      background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, #0033A1 0%, #011E41 0%);
      background-size: cover !important;
      background-repeat: no-repeat !important;
-         background-position: center !important;
+         background-position: center center!important;
 }
  #banner .banner-container {
      display: flex;
@@ -1365,9 +1387,7 @@
     }
 }
  @media(max-width:767px){
-     #banner .carousel-container{
-         min-height: 60vh;
-    }
+    
      #banner .banner-container{
          min-height: 28rem;
     }
@@ -1378,16 +1398,6 @@
     }
      #banner .subtext span{
          font-size: 15px;
-    }
-     #banner h1{
-         font-size: 40px;
-         line-height: 40px;
-         margin-bottom: 20px;
-    }
-     #banner p{
-         font-size: 18px;
-         line-height: 22px;
-         width: 100%;
     }
 }
 /*------ # Overview -------*/
@@ -2004,10 +2014,143 @@
      .bluebox .imagecontent {
          height: 465px;
     }
+       .companyintro .bluebox .content{
+          min-height: 100%;  
+    }
 }
+/*sercvices banner*/
+
  .services{
      background: #fff;
 }
  .services .container-fluid {
      max-width: 1440px;
+}
+
+.service-banner-1{
+background: url(../img/services/banner/services_cx_audits_img.jpg) !important;
+}
+.service-banner-2{
+  background: url(../img/services/banner/services_digital_img.jpg) !important;  
+}
+.service-banner-3{
+   background: url(../img/services/banner/services_engineering_pods_img.jpg) !important; 
+}
+.service-banner-4{
+   background: url(../img/services/banner/services_experience_design_product_img_1.jpg) !important; 
+}
+.service-banner-5{
+   background: url(../img/services/banner/services_prodcut_img.jpg) !important; 
+}
+.service-banner-6{
+  background: url(../img/services/banner/services_technical_img.jpg) !important;  
+}
+
+@media(max-width:768px){
+    .service-banner-1{
+background: url(../img/services/mobile/services_cx_audits_img_ipad.jpg) !important;
+}
+.service-banner-2{
+  background: url(../img/services/mobile/services_digital_img_ipad.jpg) !important;  
+}
+.service-banner-3{
+   background: url(../img/services/mobile/services_engineering_pods_img_ipad.jpg) !important; 
+}
+.service-banner-4{
+   background: url(../img/services/mobile/services_experience_design_product_img_1_ipad.jpg) !important; 
+}
+.service-banner-5{
+   background: url(../img/services/mobile/services_prodcut_img_ipad.jpg) !important; 
+}
+.service-banner-6{
+  background: url(../img/services/mobile/services_technical_img_ipad.jpg) !important;  
+}
+.banner-container{
+justify-content: flex-end !important;
+padding-bottom: 15px;
+}
+#banner h1 {
+    font-size: 28px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+#banner p {
+    font-size: 14px;
+    line-height: 16px;
+    width: 100%;
+}
+}
+
+
+
+/*goal banner*/
+
+
+
+.goal-banner-1{
+background: url(../img/goals/accerate-sales.jpg) !important;
+}
+.goal-banner-2{
+  background: url(../img/goals/build-better-product.jpg) !important;  
+}
+.goal-banner-3{
+   background: url(../img/goals/build-data-intelligence.jpg) !important; 
+}
+.goal-banner-4{
+   background: url(../img/goals/modern-digital-experience.jpg) !important; 
+}
+.goal-banner-5{
+   background: url(../img/goals/optimize-operation.jpg) !important; 
+}
+.goal-banner-6{
+  background: url(../img/goals/startegic-information.jpg) !important;  
+}
+
+@media(max-width:992px){
+    .goal-banner-1{
+background: url(../img/goals/mobile/accelerate-sales.jpg) !important;
+}
+.goal-banner-2{
+ background: url(../img/goals/mobile/build-better-product.jpg) !important;  
+}
+.goal-banner-3{
+   background: url(../img/goals/mobile/build-data-intelligence.jpg) !important; 
+}
+.goal-banner-4{
+   background: url(../img/goals/mobile/improve-digital-experirnce.jpg) !important; 
+}
+.goal-banner-5{
+   background: url(../img/goals/mobile/optimised-operation.jpg) !important; 
+}
+.goal-banner-6{
+  background: url(../img/goals/mobile/transform-your-enterprise.jpg) !important;  
+}
+.banner-container{
+justify-content: flex-end !important;
+padding-bottom: 15px;
+}
+#banner .banner-container.accerate{
+           justify-content: flex-end;
+            padding-bottom: 15px;
+}
+#banner .banner-container.enterprise{
+           justify-content: flex-end;
+            padding-bottom: 15px;
+}
+.banner-container.about {
+    justify-content: flex-start !important;
+    padding-top: 109px !important;
+}
+#banner h1 {
+    font-size: 28px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+#banner p {
+    font-size: 14px;
+    line-height: 16px;
+    width: 100%;
+}
 }

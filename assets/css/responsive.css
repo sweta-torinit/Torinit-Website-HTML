@@ -20,7 +20,7 @@
          font-size: 15px;
     }
     #banner{
-        background-position: center  !important;
+        background-position: center center  !important;
     }
      .about .section-title {
          padding-bottom: 20px;
@@ -65,6 +65,9 @@
     
      .bluebox .content{
          min-height: 275px;
+    }
+       .companyintro .bluebox .content{
+          min-height: 100%;  
     }
      .goal .content-details{
          padding: 32px;
@@ -501,6 +504,12 @@
      #banner p {
          width: 52%;
     }
+    .bluebox .content{
+          min-height: 424px;  
+    }
+    .companyintro .bluebox .content{
+          min-height: 100%;  
+    }
     /*footer*/
      #footer{
          padding: 68px 85px;
@@ -598,7 +607,10 @@
     }
     
      .bluebox .content{
-         min-height: 475px;
+         min-height: 510px;
+    }
+       .companyintro .bluebox .content{
+          min-height: 100%;  
     }
      .bluebox .content p{
          margin-bottom: 125px;
@@ -709,4 +721,10 @@
          line-height: 19px;
          width: 100%;
     }
+}
+
+@media(min-width:993px) and (max-width:1200px){
+    #banner {
+    background-position: center right !important;
+}
 }
