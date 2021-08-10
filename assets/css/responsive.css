@@ -135,9 +135,7 @@
          font-size: 15px;
          line-height: 22px;
     }
-     .worldaround .contentbox {
-         min-height: 220px;
-    }
+    
      .description .content p {
          line-height: 29px;
          font-size: 20px;
@@ -243,7 +241,7 @@
     }
      .companyintro .bluebox .content h3{
          font-size: 36px;
-         line-height: 50px;
+         line-height: 40px;
     }
      .goal .section-title {
          padding-bottom: 20px;
@@ -356,7 +354,6 @@
     }
      .worldaround .contentbox{
          padding: 45px 32px;
-         min-height: 239px;
     }
      .worldaround .contentbox p {
          font-size: 18px;
@@ -364,7 +361,6 @@
     }
      .masonry-layout .contentbluebox {
          padding: 32px;
-         min-height: 302px;
     }
      .contact-form .form-group label {
          font-size: 20px;
@@ -519,7 +515,7 @@
     /* min-height: 300px; */
 }
 .worldaround .largedata .contentbox{
-        min-height: 450px;
+        /* min-height: 450px; */
         justify-content: flex-start;
 }
 .steps .step .content p{
@@ -666,7 +662,7 @@
     font-size: 24px;
 }
 .worldaround .largedata .contentbox {
-    min-height: 470px;
+    /* min-height: 470px; */
     justify-content: flex-start;
 }
 .worldaround .largedata .contentbox.largeboxesfirst {
@@ -745,11 +741,7 @@
     line-height: 33px;
    
 }
-.goal.contentonly .hoverbox {
-    
-    min-height: 365px;
-}
-     .casestudy .content p {
+   .casestudy .content p {
          font-size: 28px;
          line-height: 33px;
          margin-bottom: 60px;

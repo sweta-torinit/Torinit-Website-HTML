@@ -1035,9 +1035,10 @@
      justify-content: flex-end;
 }
  .goal.contentonly .hoverbox {
-padding: 32px 32px;
+padding: 64px;
 justify-content: flex-start;
-    min-height: 300px;
+    min-height: 100%;
+
  }
  .goal.contentonly .columnbox3:nth-child(even) .hoverbox{
      background: rgba(1, 30, 65, 1);
@@ -1158,6 +1159,9 @@ color: #fff;
     }
      .goal .content-details{
          padding: 32px;
+    }
+    .goal.contentonly .hoverbox{
+        padding: 32px;
     }
      .goal .content-details h3{
          font-size: 24px;
@@ -1537,13 +1541,15 @@ color: #fff;
  .worldaround .contentbox{
       background: rgba(46, 87, 175, 1);
     padding: 75px 32px;
-    min-height: 329px;
+    min-height: 95%;
     color: #fff;
-    padding-bottom: 20px;
     margin-bottom: 24px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+}
+.worldaround  .col-md-12 .contentbox{
+    min-height: 77%;
 }
  .worldaround .section-title{
      padding-bottom: 32px;
@@ -1561,7 +1567,16 @@ color: #fff;
      text-align: justify;
 }
 .worldaround .largedata .contentbox{
-   min-height: 385px; 
+   min-height: 95%; 
+}
+.worldaround .largedata .col-md-12 .contentbox{
+   min-height: 91%; 
+}
+.worldaround .largedata .col-12 .contentbox{
+   min-height: 91%; 
+}
+.worldaround .largedata .col-lg-12 .contentbox{
+   min-height: 91%; 
 }
 .worldaround .largedata .contentbox h3{
  font-size: 32px;
@@ -1634,10 +1649,9 @@ color: #fff;
  .masonry-layout .contentbluebox{
      padding: 64px;
      background: #011E41;
-     min-height: 384px;
+     min-height: 95%;
      color: #fff;
      margin-bottom: 24px;
-     padding-bottom: 32px;
 }
 
  .masonry-layout .contentbluebox h3{
@@ -1653,7 +1667,9 @@ color: #fff;
      text-align: justify;
 }
  .masonry-layout.no-content .contentbluebox{
-   min-height: auto;
+      min-height: 87%;
+    display: flex;
+    align-items: center
 }
  .masonry-layout.no-content .contentbluebox h3{
    min-height: auto;
@@ -1789,6 +1805,9 @@ color: #fff;
      .steps .step .content p {
          font-size: 18px;
          line-height: 24px;
+    }
+    .steps .step .content{
+        min-height: auto;
     }
 }
 /*------------Vision------------*/
@@ -1926,6 +1945,9 @@ color: #fff;
      justify-content: center;
      display: flex;
      flex-direction: column;
+}
+ .companyintro .bluebox .imagecontent{
+    height: 100%;
 }
  .companyintro .bluebox .content p{
      margin-bottom: 0px;
@@ -2221,27 +2243,15 @@ padding-bottom: 15px;
 }
 }
 
-@media(min-width:1024px) and (max-width:1400px){
-   .worldaround .largedata .contentbox.largeboxes {
-    min-height: 578px;
-    justify-content: flex-start;
-} 
-}
-@media(min-width:1401px) and (max-width:1900px){
-   .worldaround .largedata .contentbox.largeboxes {
-    min-height: 509px;
-    justify-content: flex-start;
-} 
+
+
 }
 @media(min-width:992px) and (max-width:1024px){
     .worldaround .largedata .contentbox h3 {
     font-size: 26px;
     line-height: 32px;
 }
- .worldaround .largedata .contentbox.largeboxes {
-   
-    justify-content: flex-start;
-} 
+
 }
 
 @media(min-width:768px) and (max-width:991px){
@@ -2249,14 +2259,7 @@ padding-bottom: 15px;
     font-size: 26px;
     line-height: 32px;
 }
- .worldaround .largedata .contentbox.largeboxes {
-       min-height: 475px;
-    justify-content: flex-start;
-} 
- .worldaround .largedata .contentbox.largeboxesfirst {
-       min-height: 475px;
-    justify-content: flex-start;
-}
+
 }
 @media(min-width:1200px) and (max-width:1399px){
     .worldaround .largedata .contentbox p {
@@ -2265,14 +2268,11 @@ padding-bottom: 15px;
     margin-bottom: 0px;
 }
 .worldaround .largedata .contentbox h3 {
-    font-size: 32px;
+    font-size: 27px;
     line-height: 32px;
-    min-height: 61px;
+    min-height: auto;
 }
-.worldaround .largedata .contentbox {
-    min-height: 400px;
-    justify-content: flex-start;
-}
+
 }
 @media(min-width:1400) and (max-width:1900px){
     .worldaround .largedata .contentbox p {
