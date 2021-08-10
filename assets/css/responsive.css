@@ -98,6 +98,9 @@
          line-height: 29px;
          font-size: 20px;
     }
+    .masonry-layout .contentbluebox{
+        padding: 32px;
+    }
      #banner h1{
          font-size: 40px;
          line-height: 40px;
@@ -346,6 +349,7 @@
     font-size: 33px;
     line-height: 45px;
 }
+
      .worldaround .contentbox h3 {
          font-size: 35px;
          line-height: 35px;
@@ -488,10 +492,50 @@
     }
      .container.container-xs {
          max-width: calc(100% - 317px);
-         width: calc(100% - 217px);
+         width: calc(100% - 317px);
     }
-    
+    .services .container-fluid{
+         max-width: calc(100% - 375px);
+         width: calc(100% - 375px);
+    }
+    .companyintro .container-fluid{
+            max-width: calc(100% - 364px);
+    width: calc(100% - 364px);
+    }
+   .services.home .container-fluid{
+         max-width: calc(100% - 260px);
+         width: calc(100% - 260px);
+    }
+    .worldaround .largedata .contentbox p {
+    font-size: 20px;
+    line-height: 26px;
+    }
+    .masonry-layout .contentbluebox p{
+        font-size: 20px;
+    line-height: 28px;
+}
+.worldaround .largedata .contentbox.largeboxesfirst{
+    justify-content: center;
+    /* min-height: 300px; */
+}
+.worldaround .largedata .contentbox{
+        min-height: 450px;
+        justify-content: flex-start;
+}
+.steps .step .content p{
+       font-size: 20px;
+    line-height: 26px; 
+}
+.goal .content-details p{
    
+    font-size: 20px;
+    line-height: 25px;
+   
+}
+.goal.contentonly .hoverbox p{
+    font-size: 20px;
+    line-height: 29px;
+}
     /*casestudy*/
      .casestudy{
          background-size: 35%;
@@ -511,7 +555,7 @@
          width: 52%;
     }
     .bluebox .content{
-          min-height: 424px;  
+          min-height: 100%;  
     }
     .companyintro .bluebox .content{
           min-height: 100%;  
@@ -582,24 +626,72 @@
     }
    
      #hero .container {
-         max-width: calc(100% - 593px);
-         width: calc(100% - 593px);
+         max-width: calc(100% - 515px);
+         width: calc(100% - 515px);
     }
     #hero h1 {
-    font-size: 77px;
-    line-height: 77px;
+    font-size: 67px;
+    line-height: 67px;
     margin-bottom: 26px;
     /* width: 69%; */
 }
      #hero p {
-          font-size: 32px;
+          font-size: 28px;
+    line-height: 36px;
+        width: 42%;
+        
+    }
+    #banner .banner-container{
+        max-width: calc(100% - 532px);
+    width: calc(100% - 532px);
+    }
+    #banner h1 {
+    font-size: 67px;
+    line-height: 67px;
+    margin-bottom: 26px;
+    /* width: 69%; */
+}
+ #banner p {
+          font-size: 28px;
+    line-height: 36px;
+        width: 42%;
+        
+    }
+     #banner .subtext {
+          font-size: 28px;
     line-height: 38px;
         
     }
+.goal.contentonly .hoverbox p{
+    font-size: 24px;
+}
+.worldaround .largedata .contentbox {
+    min-height: 470px;
+    justify-content: flex-start;
+}
+.worldaround .largedata .contentbox.largeboxesfirst {
+    justify-content: center;
+}
+.steps .step .content p{
+    font-size: 24px;
+    line-height: 34px;
+}
+.worldaround .largedata .contentbox p {
+    font-size: 24px;
+    line-height: 30px;
+}
+.worldaround .largedata .contentbox h3 {
+    font-size: 38px;
+    line-height: 42px;
+}
     
      .container {
          max-width: calc(100% - 444px);
          width: calc(100% - 444px);
+    }
+   .services.home .container-fluid {
+         max-width: calc(100% - 499px);
+         width: calc(100% - 499px);
     }
      .container.container-xs {
          max-width: calc(100% - 600px);
@@ -610,17 +702,22 @@
          background: #fff;
     }
      .services .container-fluid {
-         max-width: 1732px;
+            max-width: calc(100% - 654px);
+    width: calc(100% - 600px);
     }
     
      .bluebox .content{
-         min-height: 510px;
+         min-height: 100%;
     }
        .companyintro .bluebox .content{
           min-height: 100%;  
     }
      .bluebox .content p{
-         margin-bottom: 125px;
+         margin-bottom: 100px;
+    }
+    .bluebox .content p {
+    line-height: 36px;
+    font-size: 24px;
     }
      .whoweare .content p {
          line-height: 40px;
@@ -642,6 +739,16 @@
          line-height: 66px;
          max-width: calc(100% - 70px);
     }
+    .goal .content-details p{
+   
+    font-size: 24px;
+    line-height: 33px;
+   
+}
+.goal.contentonly .hoverbox {
+    
+    min-height: 365px;
+}
      .casestudy .content p {
          font-size: 28px;
          line-height: 33px;
@@ -658,9 +765,12 @@
          max-width: calc(100% - 653px);
          width: calc(100% - 653px);
     }
-     #banner p{
-         width: 37%;
-    }
+   
+    .masonry-layout .contentbluebox p{
+       font-size: 24px;
+    line-height: 34px;
+}
+
     /*footer*/
      #footer {
          padding: 68px 154px;
