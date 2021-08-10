@@ -1,3 +1,9 @@
+ @media(max-width:992px){
+     .steps .step .content {
+    padding: 35px 10px 23px 10px;
+    min-height: 219px;
+}
+ }
  @media(min-width:768px) and (max-width:1023px){
      #hero .carousel-container{
          min-height: 44em;
@@ -547,6 +553,7 @@
          font-size: 21px;
          line-height: 25px;
     }
+   
 }
  @media(min-width:2400px){
      #header{
@@ -691,6 +698,7 @@
          font-size: 21px;
          line-height: 25px;
     }
+    
 }
  @media screen and (orientation:landscape) and (min-device-width: 319px) and (max-device-width: 900px) {
      #banner .banner-container {
@@ -707,7 +715,7 @@
          width: 100%;
     }
      #banner h1 {
-         font-size: 28px;
+         font-size: 27px;
          line-height: 29px;
          margin-bottom: 13px;
     }

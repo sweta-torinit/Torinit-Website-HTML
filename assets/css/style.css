@@ -163,6 +163,16 @@
      transition: width .3s;
      margin-top: 4px;
 }
+
+ .dropdown a.active::after{
+     content: '';
+     display: block;
+     width: 100%;
+     height: 2px;
+     background: #2a2c39;
+     transition: width .3s;
+     margin-top: 4px;
+}
  .navbar a::after {
      content: '';
      display: block;
@@ -473,6 +483,7 @@
     font-family: castoro;
     line-height: 64px;
     margin-bottom: 20px;
+    text-transform: capitalize;
     /* width: 67%; */
 }
  #hero .subtext {
@@ -485,7 +496,7 @@
      margin-left: 12px;
 }
  #hero p {
-  /* width: 59%; */
+  width: 65%;
     color: #fff;
     font-family: MavenPro Regular;
     font-size: 26px;
@@ -516,6 +527,7 @@
     line-height: 29px;
     margin-bottom: 10px;
     width: 100%;
+    
     }
      #hero p{
         font-size: 13px;
@@ -552,6 +564,7 @@
      padding: 64px 0;
      overflow: hidden;
 }
+
  .section-title {
      padding-bottom: 64px;
 }
@@ -569,6 +582,13 @@
      color: #000;
      line-height: 28px;
      margin-bottom: 0px;
+}
+
+.services-associate  .section-title h2 {
+   color: #000;
+}
+.services-associate  .section-title  {
+  padding-bottom: 32px;
 }
  @media(max-width:767px){
      section{
@@ -1018,6 +1038,10 @@
      flex-direction: column;
      justify-content: flex-end;
 }
+ .goal.contentonly .hoverbox {
+padding: 64px 32px;
+justify-content: flex-start;
+ }
  .goal .hoverbox .content-title h3 {
      margin-bottom: 37px;
      font-size: 35px;
@@ -1269,18 +1293,8 @@
     }
 }
 /*-------- # Sub page banner ----------*/
-#banner .banner-container.accerate{
-           justify-content: flex-end;
-            padding-bottom: 92px;
-}
-#banner .banner-container.enterprise{
-           justify-content: flex-end;
-            padding-bottom: 56px;
-}
-.banner-container.about {
-    justify-content: flex-start !important;
-    padding-top: 209px !important;
-}
+
+
  #banner {
      width: 100%;
      background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, #0033A1 0%, #011E41 0%);
@@ -1290,13 +1304,14 @@
 }
  #banner .banner-container {
      display: flex;
-     justify-content: center;
+     justify-content: flex-end;
      align-self: center;
      align-items: flex-start;
      flex-direction: column;
      text-align: left;
      position: relative;
      min-height: 83vh;
+     padding-bottom: 55px;
 }
  @media(min-width:1200px) and (max-width:1399px){
      #banner .banner-container {
@@ -1313,13 +1328,14 @@
     }
 }
  #banner h1 {
-    color: #fff;
+       color: #fff;
     font-size: 64px;
     font-weight: 400;
     font-family: castoro;
-    line-height: 64px;
+    line-height: 69px;
     margin-bottom: 20px;
-        width: 93%;
+    width: 93%;
+    text-transform: capitalize;
 }
  #banner .subtext {
      margin-bottom: 32px;
@@ -1446,6 +1462,15 @@
  .description .section-title h2{
      color: #000;
 }
+.description .section-title.blue{
+    padding-bottom: 0px;
+}
+.description .section-title.blue h2{
+    color: #0033A1;
+}
+.description .section-title.blue p{
+    margin-bottom: 24px;
+}
  .description .content p {
      line-height: 40px;
      font-size: 28px;
@@ -1471,6 +1496,15 @@
      animation-delay: 0.8s;
      border: 1px solid #011E41;
 }
+.subsection{
+    padding-top: 38px;
+}
+.subsection p{
+    margin-bottom: 24px !important;
+}
+.subsection .mb-0{
+   margin-bottom: 0px !important;  
+}
  @media(min-width:1280px) and (max-width:1400px){
      .description .content p {
          line-height: 32px;
@@ -1495,6 +1529,9 @@
     color: #fff;
     padding-bottom: 20px;
     margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
  .worldaround .section-title{
      padding-bottom: 32px;
@@ -1503,11 +1540,24 @@
      font-size: 48px;
      line-height: 48px;
      margin-bottom: 32px;
+     text-transform: capitalize;
 }
  .worldaround .contentbox p{
      font-size: 24px;
      line-height: 29px;
      margin-bottom: 0px;
+}
+.worldaround .largedata .contentbox{
+   min-height: 385px; 
+}
+.worldaround .largedata .contentbox h3{
+ font-size: 32px;
+     line-height: 32px;
+}
+.worldaround .largedata  .contentbox p {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 0px;
 }
  @media(min-width:1280px) and (max-width:1420px){
      .worldaround .contentbox p{
@@ -1573,17 +1623,26 @@
      min-height: 384px;
      color: #fff;
      margin-bottom: 24px;
+     padding-bottom: 32px;
 }
+
  .masonry-layout .contentbluebox h3{
-     font-size: 36px;
-     line-height: 54px;
-     margin-bottom: 38px;
-     min-height: 108px;
+    font-size: 36px;
+    line-height: 54px;
+    margin-bottom: 20px;
+    min-height: 95px
 }
  .masonry-layout .contentbluebox p {
      font-size: 16px;
      line-height: 22px;
      margin-bottom: 0px;
+}
+ .masonry-layout.no-content .contentbluebox{
+   min-height: auto;
+}
+ .masonry-layout.no-content .contentbluebox h3{
+   min-height: auto;
+   margin-bottom: 0px;
 }
  @media(min-width:601px) and (max-width:991px){
      .masonry-layout .contentbluebox h3 {
@@ -1628,7 +1687,7 @@
 }
  .cta h3{
      font-size: 48px;
-     line-height: 68px;
+     line-height: 52px;
      margin-bottom: 0px;
 }
  .cta .btn-learn-more{
@@ -1689,6 +1748,7 @@
 }
  .steps .step .content{
      padding: 35px 32px 48px 32px;
+         min-height: 148px;
 }
  .steps .step .content h3{
      color: #000;
@@ -1697,7 +1757,7 @@
 }
  .steps .step .content p{
      font-size: 18px;
-     line-height: 32px;
+     line-height: 27px;
      color: rgba(1, 30, 65, 1);
      padding-right: 8px;
      margin-bottom: 0px;
@@ -2067,10 +2127,10 @@ background: url(../img/services/mobile/services_cx_audits_img_ipad.jpg) !importa
 }
 .banner-container{
 justify-content: flex-end !important;
-padding-bottom: 15px;
+padding-bottom: 15px !important;
 }
 #banner h1 {
-    font-size: 28px;
+    font-size: 27px;
     line-height: 30px;
     margin-bottom: 10px;
     width: 100%;
@@ -2130,20 +2190,9 @@ background: url(../img/goals/mobile/accelerate-sales.jpg) !important;
 justify-content: flex-end !important;
 padding-bottom: 15px;
 }
-#banner .banner-container.accerate{
-           justify-content: flex-end;
-            padding-bottom: 15px;
-}
-#banner .banner-container.enterprise{
-           justify-content: flex-end;
-            padding-bottom: 15px;
-}
-.banner-container.about {
-    justify-content: flex-start !important;
-    padding-top: 109px !important;
-}
+
 #banner h1 {
-    font-size: 28px;
+    font-size: 27px;
     line-height: 30px;
     margin-bottom: 10px;
     width: 100%;
@@ -2152,5 +2201,66 @@ padding-bottom: 15px;
     font-size: 14px;
     line-height: 16px;
     width: 100%;
+}
+}
+
+@media(min-width:1024px) and (max-width:1400px){
+   .worldaround .largedata .contentbox.largeboxes {
+    min-height: 578px;
+    justify-content: flex-start;
+} 
+}
+@media(min-width:1401px) and (max-width:1900px){
+   .worldaround .largedata .contentbox.largeboxes {
+    min-height: 509px;
+    justify-content: flex-start;
+} 
+}
+@media(min-width:992px) and (max-width:1024px){
+    .worldaround .largedata .contentbox h3 {
+    font-size: 26px;
+    line-height: 32px;
+}
+ .worldaround .largedata .contentbox.largeboxes {
+   
+    justify-content: flex-start;
+} 
+}
+
+@media(min-width:768px) and (max-width:991px){
+    .worldaround .largedata .contentbox h3 {
+    font-size: 26px;
+    line-height: 32px;
+}
+ .worldaround .largedata .contentbox.largeboxes {
+       min-height: 475px;
+    justify-content: flex-start;
+} 
+ .worldaround .largedata .contentbox.largeboxesfirst {
+       min-height: 475px;
+    justify-content: flex-start;
+}
+}
+@media(min-width:1200px) and (max-width:1399px){
+    .worldaround .largedata .contentbox p {
+    font-size: 17px;
+    line-height: 22px;
+    margin-bottom: 0px;
+}
+.worldaround .largedata .contentbox h3 {
+    font-size: 32px;
+    line-height: 32px;
+    min-height: 61px;
+}
+.worldaround .largedata .contentbox {
+    min-height: 400px;
+    justify-content: flex-start;
+}
+}
+@media(min-width:1400) and (max-width:1900px){
+    .worldaround .largedata .contentbox p {
+    font-size: 19px;
+    line-height: 22px;
+    margin-bottom: 0px;
 }
 }
