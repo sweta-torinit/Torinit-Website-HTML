@@ -1,6 +1,30 @@
- @media(max-width:992px){
+ 
+ @media(max-width:767px){
+     .worldaround .largedata .contentbox h3 {
+    font-size: 27px;
+    line-height: 32px;
+}
+.worldaround .largedata .contentbox p {
+    font-size: 16px;
+}
+.worldaround .contentbox{
+      padding: 32px 32px;  
+}
+.services .btn-learn-more {
+    font-size: 14px;
+    padding: 12px 24px;
+}
+ .whitebgbox{
+            min-height: 90%;
+                margin-bottom: 24px;
+    }
+    .approach {
+    padding-bottom: 8px;
+}
+ }
+ @media (min-width:769px) and (max-width:992px){
      .steps .step .content {
-    padding: 35px 10px 23px 10px;
+    
     min-height: 219px;
 }
  }
@@ -45,6 +69,10 @@
      .about {
          padding-top: 40px;
          padding-bottom: 40px;
+    }
+    .approach .content p{
+           line-height: 29px;
+         font-size: 20px;
     }
      .bluebox .content p {
          font-size: 16px;
@@ -152,8 +180,8 @@
          margin-bottom: 0px;
     }
      .cta h3 {
-         font-size: 40px;
-         line-height: 40px;
+           font-size: 25px;
+    line-height: 31px;
     }
      .cta {
          padding: 50px 0;
@@ -166,6 +194,9 @@
     }
      #banner .banner-container {
          min-height: 44rem;
+    }
+    .whitebgbox{
+        min-height: 100%;
     }
 }
  @media(min-width:1024px)and (max-width:1025px){
@@ -220,7 +251,7 @@
     }
      .bluebox .content p {
          font-size: 20px;
-         line-height: 24px;
+         /* line-height: 24px; */
     }
      .whoweare{
          padding: 40px 0px;
@@ -392,7 +423,7 @@
    
      .bluebox .content p {
          font-size: 20px;
-         line-height: 24px;
+         /* line-height: 24px; */
     }
      .whoweare{
          padding: 40px 0px;
@@ -459,6 +490,17 @@
          line-height: 21px;
     }
 }
+@media(min-width:1600px) and (max-width:1799px){
+  .services  .container-fluid {
+     max-width: calc(100% - 96px);
+    width: calc(100% - 96px);
+    padding-right: var(--bs-gutter-x,.75rem) !important;
+    padding-left: var(--bs-gutter-x,.75rem) !important;
+}
+.services  .row{
+margin: 0px;
+}
+}
  @media(min-width:1800px) and (max-width:2399px){
      #header{
          padding: 31px 77px 0px 77px;
@@ -498,10 +540,16 @@
             max-width: calc(100% - 364px);
     width: calc(100% - 364px);
     }
-   .services.home .container-fluid{
-         max-width: calc(100% - 260px);
-         width: calc(100% - 260px);
+   .services.home .container-fluid {
+    max-width: calc(100% - 209px);
+    width: calc(100% - 209px);
+    padding-right: var(--bs-gutter-x,.75rem) !important;
+    padding-left: var(--bs-gutter-x,.75rem) !important;
     }
+       .services.home .container-fluid .row{
+           margin-left: 0px;
+             margin-right: 0px;
+       }
     .worldaround .largedata .contentbox p {
     font-size: 20px;
     line-height: 26px;
@@ -519,13 +567,13 @@
         justify-content: flex-start;
 }
 .steps .step .content p{
-       font-size: 20px;
-    line-height: 26px; 
+            font-size: 20px;
+    line-height: 32px;
 }
 .goal .content-details p{
    
     font-size: 20px;
-    line-height: 25px;
+    line-height: 28px;
    
 }
 .goal.contentonly .hoverbox p{
@@ -550,9 +598,7 @@
      #banner p {
          width: 52%;
     }
-    .bluebox .content{
-          min-height: 100%;  
-    }
+   
     .companyintro .bluebox .content{
           min-height: 100%;  
     }
@@ -650,7 +696,7 @@
  #banner p {
           font-size: 28px;
     line-height: 36px;
-        width: 42%;
+        /* width: 45%; */
         
     }
      #banner .subtext {
@@ -668,17 +714,32 @@
 .worldaround .largedata .contentbox.largeboxesfirst {
     justify-content: center;
 }
+.steps .step .content {
+    padding: 75px 32px 32px 32px;
+    padding-bottom: 90px;
+}
 .steps .step .content p{
     font-size: 24px;
-    line-height: 34px;
+    line-height: 40px;
+}
+.steps .step .content h3 {
+    color: #000;
+    font-size: 40px;
+    line-height: 66px;
+    margin-bottom: 32px;
+}
+.cta h3 {
+    font-size: 40px;
+    line-height: 60px;
+    margin-bottom: 0px;
 }
 .worldaround .largedata .contentbox p {
     font-size: 24px;
-    line-height: 30px;
+    line-height: 40px;
 }
 .worldaround .largedata .contentbox h3 {
-    font-size: 38px;
-    line-height: 42px;
+    font-size: 40px;
+    line-height: 54px;
 }
     
      .container {
@@ -686,9 +747,15 @@
          width: calc(100% - 444px);
     }
    .services.home .container-fluid {
-         max-width: calc(100% - 499px);
-         width: calc(100% - 499px);
+    max-width: calc(100% - 444px);
+    width: calc(100% - 444px);
+    padding-right: var(--bs-gutter-x,.75rem) !important;
+    padding-left: var(--bs-gutter-x,.75rem) !important;
     }
+       .services.home .container-fluid .row{
+           margin-left: 0px;
+             margin-right: 0px;
+       }
      .container.container-xs {
          max-width: calc(100% - 600px);
          width: calc(100% - 600px);
@@ -702,9 +769,7 @@
     width: calc(100% - 600px);
     }
     
-     .bluebox .content{
-         min-height: 100%;
-    }
+   
        .companyintro .bluebox .content{
           min-height: 100%;  
     }
@@ -712,7 +777,7 @@
          margin-bottom: 100px;
     }
     .bluebox .content p {
-    line-height: 36px;
+    line-height: 40px;
     font-size: 24px;
     }
      .whoweare .content p {
@@ -838,3 +903,7 @@
     background-position: center right !important;
 }
 }
+
+
+
+
