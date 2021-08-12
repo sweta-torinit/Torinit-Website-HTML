@@ -1257,6 +1257,25 @@ color: #fff;
  #footer .socialmedia img {
      margin-right: 15px;
 }
+
+
+ #footer .linkedin {
+    
+     color: #fff;
+}
+ #footer .linkedin  a{
+     color: #fff;
+ }
+ #footer .linkedin {
+     font-family: MavenPro Regular;
+     color: rgba(255, 255, 255, 1);
+     margin-bottom: 28px;
+     font-size: 16px;
+     line-height: 18px;
+}
+ #footer .linkedin img {
+     margin-right: 15px;
+}
  #footer .copyright p{
      font-family: MavenPro Regular;
      font-size: 16px;
@@ -1301,6 +1320,9 @@ color: #fff;
          line-height: 15px;
     }
     #footer .socialmedia{
+        font-size: 13px;
+    }
+     #footer .linkedin{
         font-size: 13px;
     }
      #footer .footermenu ul li {
@@ -1591,15 +1613,7 @@ color: #fff;
 .worldaround .largedata .contentbox{
    min-height: 95%; 
 }
-.worldaround .largedata .col-md-12 .contentbox{
-   min-height: 91%; 
-}
-.worldaround .largedata .col-12 .contentbox{
-   min-height: 91%; 
-}
-.worldaround .largedata .col-lg-12 .contentbox{
-   min-height: 91%; 
-}
+
 .worldaround .largedata .contentbox h3{
  font-size: 32px;
      line-height: 40px;
@@ -2336,4 +2350,9 @@ padding-bottom: 15px;
 .masonry-layout div:last-child .contentbluebox{
   background: #011E41;
     opacity: 100%;
+}
+
+.location-icon{
+        width: 19px;
+    margin-right: 6px;
 }
