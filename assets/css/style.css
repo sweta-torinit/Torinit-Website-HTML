@@ -49,8 +49,8 @@
  h1, h2, h3, h4, h5, h6 {
      font-family: castoro;
 }
-.text-italic{
-        font-style: italic;
+ .text-italic{
+     font-style: italic;
 }
  @media (min-width: 1200px) {
      .container {
@@ -100,7 +100,7 @@
 }
  #header .container-fluid {
      padding: 0px;
-     border-bottom: 1px solid#fff;
+     border-bottom: 1px solid#ffffff6e;
      -webkit-background-clip: padding-box;
      background-clip: padding-box;
      padding-bottom: 20px;
@@ -112,13 +112,13 @@
 }
  @media(max-width:767px){
      #header {
-         padding: 15px 21px 0px 21px;
+         padding: 10px 21px 0px 21px;
     }
      #header .logo img {
          max-height: 30px;
     }
      #header .container-fluid{
-         padding-bottom: 15px;
+         padding-bottom: 10px;
     }
 }
 /*------------ # Navigation Menu---------------*/
@@ -140,7 +140,7 @@
      display: flex;
      align-items: center;
      justify-content: space-between;
-     padding: 5px 32px 7px 32px;
+     padding: 0px 32px 0px 32px;
      font-size: 16px;
      line-height: 18px;
      color: #fff;
@@ -166,7 +166,6 @@
      transition: width .3s;
      margin-top: 4px;
 }
-
  .dropdown a.active::after{
      content: '';
      display: block;
@@ -256,7 +255,7 @@
 }
  .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover>a {
      color: var(--bs-darkblue);
-    ;
+     ;
 }
  .navbar .dropdown:hover>ul {
      opacity: 1;
@@ -276,7 +275,7 @@
 }
  @media (max-width: 1400px) {
      .navbar a {
-         padding: 5px 22px 7px 22px;
+         padding: 0px 22px 0px 22px;
          font-size: 14px;
     }
      .navbar .contactus {
@@ -378,7 +377,6 @@
  .navbar-mobile .dropdown ul a i {
      font-size: 12px;
 }
-
  .navbar-mobile .dropdown>.dropdown-active {
      display: block;
 }
@@ -479,14 +477,15 @@
      outline: 0px;
 }
  #hero h1 {
-         color: #fff;
-    font-size: 64px;
-    font-weight: 400;
-    font-family: castoro;
-    line-height: 64px;
-    margin-bottom: 20px;
-    text-transform: capitalize;
-    /* width: 67%; */
+     color: #fff;
+     font-size: 64px;
+     font-weight: 400;
+     font-family: castoro;
+     line-height: 64px;
+     margin-bottom: 20px;
+     text-transform: capitalize;
+    /* width: 67%;
+     */
 }
  #hero .subtext {
      margin-bottom: 32px;
@@ -498,15 +497,15 @@
      margin-left: 12px;
 }
  #hero p {
-  width: 65%;
-    color: #fff;
-    font-family: MavenPro Regular;
-    font-size: 26px;
-    line-height: 33px;
+     width: 65%;
+     color: #fff;
+     font-family: MavenPro Regular;
+     font-size: 26px;
+     line-height: 33px;
 }
  @media(max-width:767px){
      #hero .carousel-container{
-         min-height: 25rem;
+         min-height: 92vh;
          padding-bottom: 40px;
     }
      #hero .carousel-indicators{
@@ -525,16 +524,24 @@
          font-size: 12px;
     }
      #hero h1{
-            font-size: 24px;
-    line-height: 29px;
-    margin-bottom: 10px;
-    width: 100%;
-    
+        font-size: 2.25rem;
+    line-height: 2.75rem;
+         margin-bottom: 10px;
+         width: 100%;
     }
      #hero p{
-        font-size: 13px;
-    line-height: 15px;
-    width: 100%;
+        font-size: 1.125rem;
+    line-height: 1.5rem;
+         width: 100%;
+    }
+     #hero .slide-1{
+         background-image: url(../img/home/mobile/slide-1.jpg);
+    }
+     #hero .slide-2{
+         background-image: url(../img/home/mobile/slide-2.jpg);
+    }
+     #hero .slide-3{
+         background-image: url(../img/home/mobile/slide-3.jpg);
     }
 }
  @media(min-width:1367px) and (max-width:1439px){
@@ -566,7 +573,6 @@
      padding: 64px 0;
      overflow: hidden;
 }
-
  .section-title {
      padding-bottom: 64px;
 }
@@ -585,14 +591,14 @@
      line-height: 28px;
      margin-bottom: 0px;
 }
-.section-title.black h2{
-    color: #000;
+ .section-title.black h2{
+     color: #000;
 }
-.services-associate  .section-title h2 {
-   color: #000;
+ .services-associate .section-title h2 {
+     color: #000;
 }
-.services-associate  .section-title  {
-  padding-bottom: 32px;
+ .services-associate .section-title {
+     padding-bottom: 32px;
 }
  @media(max-width:767px){
      section{
@@ -617,7 +623,6 @@
     }
 }
 /*---------- # About -----------*/
-
  .about .content h3 {
      font-weight: 600;
      font-size: 26px;
@@ -635,7 +640,6 @@
      font-size: 28px;
      font-family: MavenPro Regular;
      color: #000;
-     
 }
  .about .content .btn-learn-more {
      font-weight: 700;
@@ -652,7 +656,6 @@
      animation-delay: 0.8s;
      border: 1px solid #011E41;
 }
-
  @media(max-width:767px){
      .about{
          padding-top: 32px;
@@ -679,21 +682,22 @@
  .services .hoverbox{
      color: #fff;
 }
-.services .btn-learn-more {
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 18px;
-    display: inline-block;
-    padding: 21px 39px;
-    border-radius: 0px;
-    transition: 0.5s;
-    line-height: 21px;
-    color:   rgba(197, 217, 231, 1);
-    font-family: MavenPro Bold;
-    -webkit-animation-delay: 0.8s;
-    animation-delay: 0.8s;
-    max-width: max-content;
-    border: 2px solid  rgba(197, 217, 231, 1);;
+ .services .btn-learn-more {
+     font-weight: 700;
+     text-transform: uppercase;
+     font-size: 18px;
+     display: inline-block;
+     padding: 21px 39px;
+     border-radius: 0px;
+     transition: 0.5s;
+     line-height: 21px;
+     color: rgba(197, 217, 231, 1);
+     font-family: MavenPro Bold;
+     -webkit-animation-delay: 0.8s;
+     animation-delay: 0.8s;
+     max-width: max-content;
+     border: 2px solid rgba(197, 217, 231, 1);
+    ;
 }
  .bluebox {
      flex: 0 0 auto;
@@ -702,25 +706,25 @@
      position: relative;
 }
  .bluebox .content {
-    background: var(--bs-darkblue);
-    width: 100%;
-    padding: 72px 70px;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 65px;
-    justify-content: center;
-    min-height:100%;
-    color: var( --bs-white);
+     background: var(--bs-darkblue);
+     width: 100%;
+     padding: 72px 70px;
+     display: flex;
+     flex-direction: column;
+     padding-bottom: 65px;
+     justify-content: center;
+     min-height:100%;
+     color: var( --bs-white);
 }
-.companyintro .bluebox .content{
-    min-height: 100%;
-    margin: 0px;
+ .companyintro .bluebox .content{
+     min-height: 100%;
+     margin: 0px;
 }
  .bluebox .content:hover{
      background: rgba(197, 217, 231, 0.5);
      color: var(--bs-darkblue);
 }
-.companyintro .bluebox .content:hover{
+ .companyintro .bluebox .content:hover{
      background: var(--bs-darkblue);
      color: #fff;
 }
@@ -740,11 +744,10 @@
      margin-bottom: 32px;
 }
  .bluebox .content p {
-        font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 40px;
-    font-family: MavenPro Regular;
-    
+     font-size: 20px;
+     line-height: 30px;
+     margin-bottom: 40px;
+     font-family: MavenPro Regular;
 }
  .bluebox .btn-learn-more {
      bottom: 72px;
@@ -754,8 +757,7 @@
      font-size: 50px;
      line-height: 0px;
 }
- 
-.services .bluebox .imagecontent{
+ .services .bluebox .imagecontent{
      height: 100%;
 }
  .bluebox .imagecontent img{
@@ -771,9 +773,8 @@
          padding: 32px 32px;
          min-height: 250px;
     }
-
-       .companyintro .bluebox .content{
-          min-height: 100%;  
+     .companyintro .bluebox .content{
+         min-height: 100%;
     }
      .bluebox .imagecontent {
          height: auto;
@@ -797,7 +798,6 @@
          font-weight: 400;
          line-height: 36px;
     }
-    
      .bluebox .content {
          padding: 32px 52px;
     }
@@ -835,7 +835,6 @@
      font-family: MavenPro Regular;
      color: #000;
      margin-bottom: 32px;
-         
 }
  .whoweare .content .btn-learn-more {
      font-weight: 700;
@@ -872,171 +871,11 @@
          padding: 12px 24px;
     }
 }
-/*--------- # Case Study----------*/
- .casestudy {
-     background: rgba(245, 245, 245, 1);
-     background-repeat: no-repeat;
-     padding-top: 64px;
-     padding-bottom: 163px;
-     position: relative;
-     background-position: right bottom;
-}
- .casestudy.casestudyinner{
-     padding-bottom: 116px;
-}
- .casestudy .section-title {
-     padding-bottom: 20px;
-}
- .casestudy .content p {
-     line-height: 19px;
-     font-size: 16px;
-     font-family: MavenPro Regular;
-     color: #000;
-     margin-bottom: 33px;
-     padding-right: 10px;
-}
- .casestudy p:last-child {
-     margin-bottom: 56px;
-}
- .casestudy .content .btn-learn-more {
-     font-weight: 700;
-     text-transform: uppercase;
-     font-size: 18px;
-     display: inline-block;
-     padding: 21px 39px;
-     border-radius: 0px;
-     transition: 0.5s;
-     line-height: 1;
-     line-height: 21px;
-     color: rgba(1, 30, 65, 1);
-     font-family: MavenPro Bold;
-     -webkit-animation-delay: 0.8s;
-     animation-delay: 0.8s;
-     border: 2px solid #011E41;
-}
- .casestudy .video-title {
-     font-family: MavenPro Regular;
-     margin-bottom: 0px !important;
-     font-size: 14px !important;
-     margin-top: 7px !important;
-     margin-left: 13px;
-     color: #000;
-}
- .casestudy .video-title span {
-     font-family: TT Norms;
-}
- .casestudy .casestudyimg{
-     position: absolute;
-     right: 0px;
-     top: 0px;
-     height: 100%;
-}
- .casestudy .carousel-indicators [data-bs-target]{
-     background-color: #CDCDCD;
-     width: 105px;
-     height: 7px;
-     margin-right: 8px;
-     margin-left: 8px;
-}
- .casestudy .carousel-indicators [data-bs-target]:first-child{
-     margin-left: 0px;
-}
- .casestudy .carousel-indicators {
-     position: absolute;
-     right: unset;
-     bottom: 63px;
-     left: unset;
-     z-index: 2;
-     display: flex;
-     justify-content: center;
-     padding: 0;
-     margin-right: 0px;
-     justify-content: left;
-     margin-left: 0px;
-     list-style: none;
-     top: unset;
-     margin-bottom: 0px;
-}
- .casestudy .carousel{
-     position: static;
-}
- .casestudy .carousel-item{
-     position: static;
-     overflow: hidden;
-}
- @media(max-width:767px){
-     .casestudy{
-         padding-top: 32px;
-        padding-bottom: 100px;
-    }
-     .casestudy.casestudyinner{
-         padding-top: 32px;
-        padding-bottom: 32px;
-    }
-     .casestudy .section-title {
-         padding-bottom: 20px;
-    }
-     .casestudy .content p{
-         padding-right: 0px;
-    }
-     .casestudy .casestudyimg{
-         position: relative;
-    }
-     .casestudy{
-         background-image: none;
-    }
-     .casestudy .carousel-indicators [data-bs-target]{
-         width: 40px;
-         height: 4px;
-         margin-right: 0px;
-    }
-     .casestudy .casestudyimg{
-         display: none;
-    }
-     .casestudy .content .btn-learn-more {
-         font-size: 14px;
-         padding: 12px 24px;
-    }
-}
- @media(min-width:601px) and (max-width:991px){
-     .casestudy .casestudyimg{
-         position: relative;
-         display: none;
-    }
-     .casestudy{
-         background-image: none;
-    }
-}
- @media(min-width:992px) and (max-width:1200px){
-     .casestudy{
-         padding-bottom: 73px;
-         background-size: 38%;
-    }
-     .casestudy .casestudyimg {
-         position: absolute;
-         right: 0px;
-         top: unset;
-         height: 78%;
-         bottom: 0px;
-    }
-     .casestudy.casestudyinner .casestudyimg{
-         right: 0px;
-    }
-     .casestudy .carousel-indicators{
-         bottom: 24px;
-    }
-     .casestudy .carousel-indicators [data-bs-target] {
-         background-color: #CDCDCD;
-         width: 75px;
-         height: 4px;
-         margin-right: 3px;
-         margin-left: 3px;
-    }
-}
+
 /*------- # Goal Study------------*/
  .goal.contentonly{
      padding-top:44px;
- }
+}
  .goal .columnbox3 {
      padding: 12px 12px;
      flex: 0 0 auto;
@@ -1053,24 +892,22 @@
      justify-content: flex-end;
 }
  .goal.contentonly .hoverbox {
-padding: 64px;
-justify-content: flex-start;
-    min-height: 100%;
-
- }
+     padding: 64px;
+     justify-content: flex-start;
+     min-height: 100%;
+}
  .goal.contentonly .columnbox3:nth-child(even) .hoverbox{
      background: rgba(1, 30, 65, 1);
      color: #fff !important;
- }
+}
  .goal.contentonly .columnbox3:nth-child(even) .hoverbox .content-title h3{
-color: #fff;
- }
+     color: #fff;
+}
  .goal.contentonly .hoverbox .content-title h3 {
-    margin-bottom: 27px;
- }
+     margin-bottom: 27px;
+}
  .goal.contentonly .hoverbox p{
-     
- }
+}
  .goal .hoverbox .content-title h3 {
      margin-bottom: 37px;
      font-size: 35px;
@@ -1131,33 +968,35 @@ color: #fff;
      line-height: 22px;
      font-family: MavenPro Regular;
 }
-.goal .section-title {
-    padding-bottom: 32px;
+ .goal .section-title {
+     padding-bottom: 32px;
 }
-.goal .content p{
-   line-height: 40px;
-    font-size: 28px;
-    font-family: MavenPro Regular;
-    color: #000;
-    margin-bottom: 32px; 
+ .goal .content p{
+     line-height: 40px;
+     font-size: 28px;
+     font-family: MavenPro Regular;
+     color: #000;
+     margin-bottom: 32px;
 }
  .fadeIn-bottom {
      top: 80%;
 }
-@media (max-width: 1400px) and (min-width: 1280px){
-   .goal .content p {
-    line-height: 32px;
-    font-size: 24px;
-} 
+ @media (max-width: 1400px) and (min-width: 1280px){
+     .goal .content p {
+         line-height: 32px;
+         font-size: 24px;
+    }
 }
  @media(min-width:1280px) and (max-width:1420px){
+
      .goal .hoverbox .content-title h3{
-         font-size: 33px;
-         line-height: 46px;
+            font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 20px !important;
     }
      .goal .content-details h3 {
-            font-size: 30px;
-    line-height: 40px;
+          font-size: 24px;
+         line-height: 34px;
     }
 }
  @media(max-width:767px){
@@ -1178,19 +1017,18 @@ color: #fff;
      .goal .content-details{
          padding: 32px;
     }
-    .goal.contentonly .hoverbox{
-        padding: 32px;
+     .goal.contentonly .hoverbox{
+         padding: 32px;
     }
      .goal .content-details h3{
          font-size: 24px;
          line-height: 32px;
          margin-bottom: 30px;
     }
-   
-        .goal .content p {
-            line-height: 22px;
-            font-size: 18px;
-        }
+     .goal .content p {
+         line-height: 22px;
+         font-size: 18px;
+    }
      .goal .hoverbox .content-title a img{
          height: 18px;
     }
@@ -1241,12 +1079,11 @@ color: #fff;
      float: right;
 }
  #footer .socialmedia {
-    
      color: #fff;
 }
- #footer .socialmedia  a{
+ #footer .socialmedia a{
      color: #fff;
- }
+}
  #footer .socialmedia {
      font-family: MavenPro Regular;
      color: rgba(255, 255, 255, 1);
@@ -1257,15 +1094,12 @@ color: #fff;
  #footer .socialmedia img {
      margin-right: 15px;
 }
-
-
  #footer .linkedin {
-    
      color: #fff;
 }
- #footer .linkedin  a{
+ #footer .linkedin a{
      color: #fff;
- }
+}
  #footer .linkedin {
      font-family: MavenPro Regular;
      color: rgba(255, 255, 255, 1);
@@ -1319,11 +1153,11 @@ color: #fff;
          font-size: 13px;
          line-height: 15px;
     }
-    #footer .socialmedia{
-        font-size: 13px;
+     #footer .socialmedia{
+         font-size: 13px;
     }
      #footer .linkedin{
-        font-size: 13px;
+         font-size: 13px;
     }
      #footer .footermenu ul li {
          font-size: 13px;
@@ -1351,14 +1185,12 @@ color: #fff;
     }
 }
 /*-------- # Sub page banner ----------*/
-
-
  #banner {
      width: 100%;
      background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, #0033A1 0%, #011E41 0%);
      background-size: cover !important;
      background-repeat: no-repeat !important;
-         background-position: center center!important;
+     background-position: center center!important;
 }
  #banner .banner-container {
      display: flex;
@@ -1386,14 +1218,14 @@ color: #fff;
     }
 }
  #banner h1 {
-       color: #fff;
-    font-size: 64px;
-    font-weight: 400;
-    font-family: castoro;
-    line-height: 69px;
-    margin-bottom: 20px;
-    width: 93%;
-    text-transform: capitalize;
+     color: #fff;
+     font-size: 64px;
+     font-weight: 400;
+     font-family: castoro;
+     line-height: 69px;
+     margin-bottom: 20px;
+     width: 93%;
+     text-transform: capitalize;
 }
  #banner .subtext {
      margin-bottom: 32px;
@@ -1402,11 +1234,11 @@ color: #fff;
 }
  #banner p {
      width: 68%;
-    color: #fff;
-    font-family: MavenPro Regular;
-    font-size: 26px;
-    line-height: 33px;
-    margin-bottom: 0px;
+     color: #fff;
+     font-family: MavenPro Regular;
+     font-size: 26px;
+     line-height: 33px;
+     margin-bottom: 0px;
 }
  #banner .btn-get-started {
      font-weight: 700;
@@ -1441,27 +1273,13 @@ color: #fff;
          margin-bottom: 0px;
     }
 }
- @media(min-width:769px) and (max-width:992px){
-     #banner .banner-container {
-         min-height: 60vh;
-    }
-     #banner h1 {
-         font-size: 48px;
-         line-height: 52px;
-    }
-     #banner p {
-         width: 77%;
-         font-size: 22px;
-         line-height: 32px;
-    }
-}
+
  @media(min-width:991px) and (max-width:1024px){
      #banner .banner-container {
          min-height: 60vh;
     }
 }
  @media(max-width:767px){
-    
      #banner .banner-container{
          min-height: 28rem;
     }
@@ -1477,7 +1295,8 @@ color: #fff;
 /*------ # Overview -------*/
  .overview {
      padding: 64px 0px;
-     /* padding-bottom: 71px; */
+    /* padding-bottom: 71px;
+     */
 }
  .overview .section-title {
      padding-bottom: 32px;
@@ -1488,7 +1307,6 @@ color: #fff;
      font-family: MavenPro Regular;
      color: #000;
      margin-bottom: 0px;
-     
 }
  .overview .content .btn-learn-more {
      font-weight: 700;
@@ -1521,14 +1339,14 @@ color: #fff;
  .description .section-title h2{
      color: #000;
 }
-.description .section-title.blue{
-    padding-bottom: 0px;
+ .description .section-title.blue{
+     padding-bottom: 0px;
 }
-.description .section-title.blue h2{
-    color: #0033A1;
+ .description .section-title.blue h2{
+     color: #0033A1;
 }
-.description .section-title.blue p{
-    margin-bottom: 24px;
+ .description .section-title.blue p{
+     margin-bottom: 24px;
 }
  .description .content p {
      line-height: 40px;
@@ -1536,7 +1354,6 @@ color: #fff;
      font-family: MavenPro Regular;
      color: #000;
      margin-bottom: 64px;
-     
 }
  .description .content p.mr-btm-32 {
      margin-bottom: 32px;
@@ -1556,14 +1373,14 @@ color: #fff;
      animation-delay: 0.8s;
      border: 1px solid #011E41;
 }
-.subsection{
-    padding-top: 38px;
+ .subsection{
+     padding-top: 38px;
 }
-.subsection p{
-    margin-bottom: 24px !important;
+ .subsection p{
+     margin-bottom: 24px !important;
 }
-.subsection .mb-0{
-   margin-bottom: 0px !important;  
+ .subsection .mb-0{
+     margin-bottom: 0px !important;
 }
  @media(min-width:1280px) and (max-width:1400px){
      .description .content p {
@@ -1583,17 +1400,17 @@ color: #fff;
      padding-bottom: 40px;
 }
  .worldaround .contentbox{
-      background: #011E41;
-    padding: 75px 32px;
-    min-height: 95%;
-    color: #fff;
-    margin-bottom: 24px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+     background: #011E41;
+     padding: 50px 32px;
+     min-height: 95%;
+     color: #fff;
+     margin-bottom: 24px;
+     display: flex;
+     flex-direction: column;
+     justify-content: flex-start;
 }
-.worldaround  .col-md-12 .contentbox{
-    min-height: 77%;
+ .worldaround .col-md-12 .contentbox{
+     min-height: 77%;
 }
  .worldaround .section-title{
      padding-bottom: 32px;
@@ -1608,20 +1425,24 @@ color: #fff;
      font-size: 24px;
      line-height: 29px;
      margin-bottom: 0px;
-     
 }
-.worldaround .largedata .contentbox{
-   min-height: 95%; 
+ .worldaround .largedata .contentbox{
+     min-height: 96%;
 }
-
-.worldaround .largedata .contentbox h3{
- font-size: 32px;
-     line-height: 40px;
+ .worldaround .largedata.benefits .contentbox{
+     min-height: 94%;
 }
-.worldaround .largedata  .contentbox p {
-    font-size: 18px;
-    line-height: 22px;
-    margin-bottom: 0px;
+ .worldaround .largedata .contentbox h3{
+         font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+ .worldaround .largedata .contentbox p {
+     font-size: 18px;
+     line-height: 22px;
+     margin-bottom: 0px;
+       color: #fff;
+    opacity: 0.8;
 }
  @media(min-width:1280px) and (max-width:1420px){
      .worldaround .contentbox p{
@@ -1663,8 +1484,8 @@ color: #fff;
     }
 }
 /*------ # Approach-------*/
-.approach{
-    padding-bottom: 44px;
+ .approach{
+     padding-bottom: 44px;
 }
  .approach .section-title {
      padding-bottom: 32px;
@@ -1676,7 +1497,6 @@ color: #fff;
      font-size: 28px;
      line-height: 40px;
      margin-bottom: 32px;
-     
 }
  @media(max-width:767px){
      .approach .content p{
@@ -1692,27 +1512,53 @@ color: #fff;
      color: #fff;
      margin-bottom: 24px;
 }
-
  .masonry-layout .contentbluebox h3{
-    font-size: 36px;
-    line-height: 54px;
-    margin-bottom: 20px;
-    min-height: 95px
+     font-size: 36px;
+     line-height: 54px;
+     margin-bottom: 20px;
+     min-height: 95px 
 }
  .masonry-layout .contentbluebox p {
      font-size: 16px;
      line-height: 22px;
      margin-bottom: 0px;
-     
 }
  .masonry-layout.no-content .contentbluebox{
-      min-height: 87%;
-    display: flex;
-    align-items: center
+     min-height: 87%;
+     display: flex;
+     align-items: center 
 }
  .masonry-layout.no-content .contentbluebox h3{
-   min-height: auto;
-   margin-bottom: 0px;
+     min-height: auto;
+     margin-bottom: 0px;
+}
+.masonry-layout div:nth-child(1) .contentbluebox{
+     background: #011E41;
+     opacity: 75%;
+}
+ .masonry-layout div:nth-child(2) .contentbluebox{
+     background: #011E41;
+     opacity: 80%;
+}
+ .masonry-layout div:nth-child(3) .contentbluebox{
+     background: #011E41;
+     opacity: 85%;
+}
+ .masonry-layout div:nth-child(4) .contentbluebox{
+     background: #011E41;
+     opacity: 90%;
+}
+ .masonry-layout div:nth-child(5) .contentbluebox{
+     background: #011E41;
+     opacity: 95%;
+}
+ .masonry-layout div:nth-child(6) .contentbluebox{
+     background: #011E41;
+     opacity: 100%;
+}
+ .masonry-layout div:last-child .contentbluebox{
+     background: #011E41;
+     opacity: 100%;
 }
  @media(min-width:601px) and (max-width:991px){
      .masonry-layout .contentbluebox h3 {
@@ -1783,8 +1629,8 @@ color: #fff;
          padding: 50px 0;
     }
      .cta h3 {
-        font-size: 25px;
-    line-height: 31px;
+         font-size: 25px;
+         line-height: 31px;
     }
 }
  @media(max-width:767px){
@@ -1812,14 +1658,14 @@ color: #fff;
  .steps .step{
      background: rgba(245, 245, 245, 1);
      margin-bottom: 24px;
-         height: 96%;
+     height: 96%;
 }
  .steps .step img{
      width: 100%;
 }
  .steps .step .content{
-      padding: 40px 32px 32px 32px;
-    padding-bottom: 70px
+     padding: 40px 32px 32px 32px;
+     padding-bottom: 70px 
 }
  .steps .step .content h3{
      color: #000;
@@ -1839,13 +1685,12 @@ color: #fff;
          font-size: 27px;
          line-height: 32px;
     }
-    
      .steps .step .content p {
          font-size: 18px;
          line-height: 24px;
     }
-    .steps .step .content{
-        min-height: auto;
+     .steps .step .content{
+         min-height: auto;
     }
 }
 /*------------Vision------------*/
@@ -1877,7 +1722,7 @@ color: #fff;
     }
      .section-title h2 {
          font-size: 26px;
-         line-height: 31px;
+         line-height: 38px;
     }
 }
 /*----Values-----*/
@@ -1985,7 +1830,7 @@ color: #fff;
      flex-direction: column;
 }
  .companyintro .bluebox .imagecontent{
-    height: 100%;
+     height: 100%;
 }
  .companyintro .bluebox .content p{
      margin-bottom: 0px;
@@ -2151,208 +1996,181 @@ color: #fff;
      .bluebox .imagecontent {
          height: 100%;
     }
-       .companyintro .bluebox .content{
-          min-height: 100%;  
+     .companyintro .bluebox .content{
+         min-height: 100%;
     }
 }
 /*sercvices banner*/
-
  .services{
      background: #fff;
 }
- /* .services .container-fluid {
-    max-width: calc(100% - 268px);
-    width: calc(100% - 268px);
-} */
-
-.service-banner-1{
-background: url(../img/services/banner/services_cx_audits_img.jpg) !important;
+ .service-banner-1{
+     background: url(../img/services/banner/services_cx_audits_img.jpg) !important;
 }
-.service-banner-2{
-  background: url(../img/services/banner/services_digital_img.jpg) !important;  
+ .service-banner-2{
+     background: url(../img/services/banner/services_digital_img.jpg) !important;
 }
-.service-banner-3{
-   background: url(../img/services/banner/services_engineering_pods_img.jpg) !important; 
+ .service-banner-3{
+     background: url(../img/services/banner/services_engineering_pods_img.jpg) !important;
 }
-.service-banner-4{
-   background: url(../img/services/banner/services_experience_design_product_img_1.jpg) !important; 
+ .service-banner-4{
+     background: url(../img/services/banner/services_experience_design_product_img_1.jpg) !important;
 }
-.service-banner-5{
-   background: url(../img/services/banner/services_prodcut_img.jpg) !important; 
+ .service-banner-5{
+     background: url(../img/services/banner/services_prodcut_img.jpg) !important;
 }
-.service-banner-6{
-  background: url(../img/services/banner/services_technical_img.jpg) !important;  
+ .service-banner-6{
+     background: url(../img/services/banner/services_technical_img.jpg) !important;
 }
-
-@media(max-width:768px){
-    .service-banner-1{
-background: url(../img/services/mobile/services_cx_audits_img_ipad.jpg) !important;
+ @media(max-width:767px){
+     .service-banner-1{
+         background: url(../img/services/mobile/services_cx_audits_img_ipad.jpg) !important;
+    }
+     .service-banner-2{
+         background: url(../img/services/mobile/services_digital_img_ipad.jpg) !important;
+    }
+     .service-banner-3{
+         background: url(../img/services/mobile/services_engineering_pods_img_ipad.jpg) !important;
+    }
+     .service-banner-4{
+         background: url(../img/services/mobile/services_experience_design_product_img_1_ipad.jpg) !important;
+    }
+     .service-banner-5{
+         background: url(../img/services/mobile/services_prodcut_img_ipad.jpg) !important;
+    }
+     .service-banner-6{
+         background: url(../img/services/mobile/services_technical_img_ipad.jpg) !important;
+    }
 }
-.service-banner-2{
-  background: url(../img/services/mobile/services_digital_img_ipad.jpg) !important;  
-}
-.service-banner-3{
-   background: url(../img/services/mobile/services_engineering_pods_img_ipad.jpg) !important; 
-}
-.service-banner-4{
-   background: url(../img/services/mobile/services_experience_design_product_img_1_ipad.jpg) !important; 
-}
-.service-banner-5{
-   background: url(../img/services/mobile/services_prodcut_img_ipad.jpg) !important; 
-}
-.service-banner-6{
-  background: url(../img/services/mobile/services_technical_img_ipad.jpg) !important;  
-}
-.banner-container{
-justify-content: flex-end !important;
-padding-bottom: 15px !important;
-}
-#banner h1 {
-    font-size: 27px;
-    line-height: 30px;
-    margin-bottom: 10px;
-    width: 100%;
-}
-#banner p {
-    font-size: 14px;
-    line-height: 16px;
-    width: 100%;
-}
-}
-
-
-
 /*goal banner*/
-
-
-
-.goal-banner-1{
-background: url(../img/goals/accerate-sales.jpg) !important;
+ .goal-banner-1{
+     background: url(../img/goals/accerate-sales.jpg) !important;
 }
-.goal-banner-2{
-  background: url(../img/goals/build-better-product.jpg) !important;  
+ .goal-banner-2{
+     background: url(../img/goals/build-better-product.jpg) !important;
 }
-.goal-banner-3{
-   background: url(../img/goals/build-data-intelligence.jpg) !important; 
+ .goal-banner-3{
+     background: url(../img/goals/build-data-intelligence.jpg) !important;
 }
-.goal-banner-4{
-   background: url(../img/goals/modern-digital-experience.jpg) !important; 
+ .goal-banner-4{
+     background: url(../img/goals/modern-digital-experience.jpg) !important;
 }
-.goal-banner-5{
-   background: url(../img/goals/optimize-operation.jpg) !important; 
+ .goal-banner-5{
+     background: url(../img/goals/optimize-operation.jpg) !important;
 }
-.goal-banner-6{
-  background: url(../img/goals/startegic-information.jpg) !important;  
+ .goal-banner-6{
+     background: url(../img/goals/startegic-information.jpg) !important;
 }
-
-@media(max-width:992px){
-    .goal-banner-1{
-background: url(../img/goals/mobile/accelerate-sales.jpg) !important;
+ @media(max-width:767px){
+     .goal-banner-1{
+         background: url(../img/goals/mobile/accelerate-sales.jpg) !important;
+    }
+     .goal-banner-2{
+         background: url(../img/goals/mobile/build-better-product.jpg) !important;
+    }
+     .goal-banner-3{
+         background: url(../img/goals/mobile/build-data-intelligence.jpg) !important;
+    }
+     .goal-banner-4{
+         background: url(../img/goals/mobile/improve-digital-experirnce.jpg) !important;
+    }
+     .goal-banner-5{
+         background: url(../img/goals/mobile/optimised-operation.jpg) !important;
+    }
+     .goal-banner-6{
+         background: url(../img/goals/mobile/transform-your-enterprise.jpg) !important;
+    }
+     .banner-container{
+         justify-content: flex-end !important;
+         padding-bottom: 15px;
+    }
+    
 }
-.goal-banner-2{
- background: url(../img/goals/mobile/build-better-product.jpg) !important;  
+ @media(min-width:992px) and (max-width:1024px){
+     .worldaround .largedata .contentbox h3 {
+         font-size: 26px;
+         line-height: 32px;
+    }
 }
-.goal-banner-3{
-   background: url(../img/goals/mobile/build-data-intelligence.jpg) !important; 
+ @media(min-width:768px) and (max-width:991px){
+     .worldaround .largedata .contentbox h3 {
+         font-size: 26px;
+         line-height: 32px;
+    }
 }
-.goal-banner-4{
-   background: url(../img/goals/mobile/improve-digital-experirnce.jpg) !important; 
+ @media(min-width:1200px) and (max-width:1399px){
+     .worldaround .largedata .contentbox p {
+         font-size: 17px;
+         line-height: 22px;
+         margin-bottom: 0px;
+    }
+     .worldaround .largedata .contentbox h3 {
+         font-size: 27px;
+         line-height: 32px;
+         min-height: auto;
+    }
 }
-.goal-banner-5{
-   background: url(../img/goals/mobile/optimised-operation.jpg) !important; 
+ @media(min-width:1400) and (max-width:1900px){
+     .worldaround .largedata .contentbox p {
+         font-size: 19px;
+         line-height: 22px;
+         margin-bottom: 0px;
+    }
 }
-.goal-banner-6{
-  background: url(../img/goals/mobile/transform-your-enterprise.jpg) !important;  
+ 
+ .location-icon{
+     width: 17px;
+     margin-right: 6px;
 }
-.banner-container{
-justify-content: flex-end !important;
-padding-bottom: 15px;
+.text-italic.location-text{
+    position: absolute;
+    bottom: 20px;
+        width: 84%;
 }
-
+@media(max-width:767px){
+    #banner {
+    width: 100%;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, #0033A1 0%, #011E41 0%);
+    background-color: #000314 !important;
+    background-repeat: no-repeat !important;
+    background-position: top center!important;
+}
+#banner .banner-container{
+    height: 85vh;
+    padding-bottom: 35px;
+}
 #banner h1 {
-    font-size: 27px;
-    line-height: 30px;
+    font-size: 2.15rem;
+    line-height: 2.75rem;
     margin-bottom: 10px;
     width: 100%;
 }
 #banner p {
-    font-size: 14px;
-    line-height: 16px;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
     width: 100%;
 }
-}
-
-
-
-}
-@media(min-width:992px) and (max-width:1024px){
-    .worldaround .largedata .contentbox h3 {
-    font-size: 26px;
-    line-height: 32px;
-}
-
-}
-
-@media(min-width:768px) and (max-width:991px){
-    .worldaround .largedata .contentbox h3 {
-    font-size: 26px;
-    line-height: 32px;
-}
-
-}
-@media(min-width:1200px) and (max-width:1399px){
-    .worldaround .largedata .contentbox p {
-    font-size: 17px;
-    line-height: 22px;
-    margin-bottom: 0px;
-}
-.worldaround .largedata .contentbox h3 {
-    font-size: 27px;
-    line-height: 32px;
-    min-height: auto;
-}
-
-}
-@media(min-width:1400) and (max-width:1900px){
-    .worldaround .largedata .contentbox p {
-    font-size: 19px;
-    line-height: 22px;
-    margin-bottom: 0px;
+.text-italic.location-text {
+    position: relative;
+    bottom: unset;
 }
 }
 
+@media(max-width:767px){
+    #banner.goal-banner-6{
+       background-position: top left!important;
 
-
-.masonry-layout div:nth-child(1) .contentbluebox{
-  background: #011E41;
-    opacity: 75%;
-}
-.masonry-layout div:nth-child(2) .contentbluebox{
-  background: #011E41;
-    opacity: 80%; 
-}
-.masonry-layout div:nth-child(3) .contentbluebox{
-   background: #011E41;
-    opacity: 85%; 
-}
-.masonry-layout div:nth-child(4) .contentbluebox{
-   background: #011E41;
-    opacity: 90%;
-}
-.masonry-layout div:nth-child(5) .contentbluebox{
-  background: #011E41;
-    opacity: 95%; 
-}
-.masonry-layout div:nth-child(6) .contentbluebox{
-   background: #011E41;
-    opacity: 100%; 
-}
-.masonry-layout div:last-child .contentbluebox{
-  background: #011E41;
-    opacity: 100%;
+    }
+     #banner.about-banner{
+          background-position: bottom right!important;  
+    }
+    #banner.service-banner-3{
+        background-position: 24% 0%!important;
+    }
 }
 
-.location-icon{
-        width: 19px;
-    margin-right: 6px;
+@media(min-width:1200px){
+    .worldaround .largedata .contentbox.largeboxesfirst{
+        min-height: 91%;
+    }
 }
